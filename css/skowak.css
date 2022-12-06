@@ -95,7 +95,11 @@ p, strong {
   line-height: 2.3rem;
   margin-bottom: 1.3rem;
 }
-
+.wrapper {
+  padding: 6rem 2rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
 
 @media ( max-width: 600px ) {
   .viewport-left {
@@ -114,7 +118,7 @@ p, strong {
     font-size: 1.3rem;
   }
 
-  .vision .trick {
+  .vision .wrapper {
     width: 100%;
   }
 
