@@ -3,27 +3,6 @@
   font-weight: 400;
   font-size: 16px;
 }
-.viewport-right {
-  background: #ffffff;
-  /*padding-top: 20rem;*/
-}
-.viewport-right .logo {
-  max-width: 80%;
-}
-.viewport-left {
-  background: #000000;
-  /*padding-top: 12rem;*/
-}
-.viewport-left .logo {
-  max-width: 40%;
-}
-.viewport-right, .viewport-left {
-  height: 100%;
-  /*text-align: center;*/
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
 .logo {
   display: block;
   max-width: 85%;
@@ -72,8 +51,8 @@ h2 {
   /* width: 50%; */
 }
 .vision {
-  background-color: #ffffff;
-  background-image: linear-gradient(120deg, #dbdbdb 0%, #dbdbdb 100%);
+  background-color: #ece8ee;
+  /* background-image: linear-gradient(120deg, #dbdbdb 0%, #dbdbdb 100%); */
   position: relative;
 }
 
