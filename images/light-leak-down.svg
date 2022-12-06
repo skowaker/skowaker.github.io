@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1109px" height="432px" viewBox="0 0 1109 432" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>light-leak-down</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1109" height="432"></rect>
+        <filter x="-9.7%" y="-34.0%" width="119.3%" height="168.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="86.850731%" y2="50%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#41B5F0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-20.8%" y="-66.4%" width="141.6%" height="232.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="43" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="86.850731%" y2="50%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="32.3040729%"></stop>
+            <stop stop-color="#41E1F0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-32.8%" y="-58.9%" width="165.6%" height="217.8%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="29" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="112.889175%" y1="50%" x2="24.8420942%" y2="50%" id="linearGradient-8">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F1E950" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-55.0%" y="-69.3%" width="210.1%" height="238.6%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="39" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="9.53818612%" y1="50%" x2="48.4940355%" y2="50%" id="linearGradient-10">
+            <stop stop-color="#E06CF4" offset="0%"></stop>
+            <stop stop-color="#41B5F0" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-20.0%" y="-32.5%" width="140.0%" height="164.9%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="38" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="48.4940355%" y2="50%" id="linearGradient-12">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-43.2%" y="-61.0%" width="186.4%" height="222.0%" filterUnits="objectBoundingBox" id="filter-13">
+            <feGaussianBlur stdDeviation="38" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="v2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="light-leak-down">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Mask"></g>
+            <g id="Group-9" mask="url(#mask-2)">
+                <g transform="translate(19.000000, 37.947998)">
+                    <g id="Group-4" stroke-width="1" fill="none" transform="translate(243.032042, 0.000000)">
+                        <g id="Group-5">
+                            <g id="Group-2" opacity="0.494355265" transform="translate(794.467958, 303.304242) scale(-1, 1) translate(-794.467958, -303.304242) ">
+                                <ellipse id="Oval" fill="#8D15BC" opacity="0.50995963" filter="url(#filter-3)" transform="translate(794.467958, 300.372681) rotate(6.000000) translate(-794.467958, -300.372681) " cx="794.467958" cy="300.372681" rx="775.668502" ry="220.501172"></ellipse>
+                                <g id="Group" transform="translate(788.691715, 407.307263) rotate(6.000000) translate(-788.691715, -407.307263) translate(93.523566, 279.973350)">
+                                    <ellipse id="Oval" fill="url(#linearGradient-4)" filter="url(#filter-5)" cx="1080.57562" cy="117.134336" rx="309.760682" ry="97.1957083"></ellipse>
+                                    <ellipse id="Oval" fill="url(#linearGradient-6)" filter="url(#filter-7)" cx="671.840734" cy="129.019714" rx="132.64691" ry="73.8386001"></ellipse>
+                                    <ellipse id="Oval" fill="url(#linearGradient-8)" filter="url(#filter-9)" cx="537.991485" cy="117.325139" rx="106.268263" ry="84.3869716"></ellipse>
+                                </g>
+                            </g>
+                            <ellipse id="Oval" fill="url(#linearGradient-10)" filter="url(#filter-11)" cx="693.273868" cy="451.496963" rx="284.889386" ry="175.555039"></ellipse>
+                        </g>
+                        <ellipse id="Oval" fill="url(#linearGradient-12)" filter="url(#filter-13)" cx="843.624411" cy="408.005478" rx="131.893234" ry="93.4284328"></ellipse>
+                    </g>
+                    <path d="M1221.44636,519.660242 C1286.51262,519.660242 1159.54424,235.575567 1159.54424,161.508978 C1159.54424,87.442388 1027.21412,286.554902 926.663217,301.028043 C826.112316,315.501185 701,387.227593 701,461.294183 C701,535.360773 1156.3801,519.660242 1221.44636,519.660242 Z" id="Oval" fill="#8BD2F3" opacity="0.031364"></path>
+                    <path d="M936.440317,559.658893 C1001.3808,559.658893 1053,485.025469 1053,410.887076 C1053,336.748683 865.35963,272.624383 765.003097,287.111555 C664.646565,301.598728 417,427.097858 417,501.236251 C417,575.374644 871.499833,559.658893 936.440317,559.658893 Z" id="Oval" fill="#E18BF3" opacity="0.041364"></path>
+                    <path d="M805.352207,469.565886 C870.341781,469.565886 922,394.951365 922,320.831749 C922,246.712132 776.958453,167.39225 490.086559,208.13083 C203.214666,248.86941 0,377.645038 0,451.764654 C0,525.88427 740.362633,469.565886 805.352207,469.565886 Z" id="Oval" fill="#E18BF3" opacity="0.041364"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
