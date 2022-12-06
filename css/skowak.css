@@ -1,3 +1,8 @@
+* {
+  font-family: 'Jost', 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
 .viewport-right {
   background: #ffffff;
   /*padding-top: 20rem;*/
@@ -21,23 +26,54 @@
 }
 .logo {
   display: block;
+  max-width: 85%;
+  margin-left: 7.5%;
   /*margin: 0 auto;*/
 }
 .row {
   height: 100%;
 }
 h1 {
-  text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 400;
   color: #ffffff;
-  margin-bottom: 2rem;
+  margin: 2rem 0 0 0;
+  font-size: 1.5rem;
+  text-align: center;
 }
 h2 {
-  color: #ffffffb8;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+.hero {
+  background-color: #000000;
+  position: relative;
+}
+
+.hero .trick {
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.light-leak-up, .light-leak-down {
+  position: absolute;
+  opacity: .75;
+}
+.light-leak-up {
+  top: 0;
+  left: 0;
+  /* width: 80%; */
+}
+.light-leak-down {
+  bottom: 0;
+  right: 0;
+  /* width: 50%; */
 }
 .vision {
-  background-color: #21D4FD;
-  background-image: linear-gradient(120deg, #21D4FD 0%, #B721FF 100%);
+  background-color: #ffffff;
+  background-image: linear-gradient(120deg, #dbdbdb 0%, #dbdbdb 100%);
   position: relative;
 }
 
@@ -46,10 +82,18 @@ h2 {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+  padding: 2rem;
+  width: 50rem;
 }
 
 .vision strong {
-  color: #fffa00;
+  color: #df3182;
+}
+
+p, strong {
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  margin-bottom: 1.3rem;
 }
 
 
@@ -59,14 +103,22 @@ h2 {
   }
 
   h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
     font-size: 1.2rem;
   }
 
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  p, strong {
+    font-size: 1.3rem;
+  }
+
   .vision .trick {
-    width: 70%;
+    width: 100%;
+  }
+
+  .light-leak-up, .light-leak-down {
+    width: 100%;
   }
 }
