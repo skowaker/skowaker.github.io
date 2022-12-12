@@ -9,21 +9,22 @@
   margin-left: 7.5%;
   /*margin: 0 auto;*/
 }
-.row {
+.row-full-height {
   height: 100%;
 }
 h1 {
   font-weight: 500;
   color: #ffffff;
   margin: 2rem 0 0 0;
-  font-size: 1.5rem;
+  font-size: 2.1rem;
   text-align: center;
 }
 h2 {
   color: #000000;
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 600;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
 }
 .hero {
   background-color: #000000;
@@ -66,10 +67,23 @@ p, strong {
   line-height: 2.5rem;
   margin-bottom: 1.5rem;
 }
+
 .wrapper {
   padding: 6rem 2rem;
-  max-width: 35rem;
+  max-width: 48rem;
   margin: 0 auto;
+}
+
+.emphasis, .emphasis strong {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.spacer {
+  margin: 0 auto;
+  display: inline-block;
+  width: 99.9999%;
+  padding: 2rem 0 4rem 0;
 }
 
 @media ( max-width: 600px ) {
@@ -83,11 +97,11 @@ p, strong {
   }
 
   h1 {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
   }
 
   h2 {
-    font-size: 2.3rem;
+    /* font-size: 2.3rem; */
   }
 
   p, strong {
@@ -95,6 +109,10 @@ p, strong {
     font-size: 1.5rem;
     line-height: 2.3rem;
     margin-bottom: 1.3rem;
+  }
+
+  .emphasis, .emphasis strong {
+    /* font-size: 1.5rem; */
   }
 
   .vision .wrapper {
