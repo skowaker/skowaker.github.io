@@ -13,6 +13,7 @@
   height: 100%;
 }
 h1 {
+  /* font-family: 'Bebas Neue', 'Jost', 'Helvetica Neue', sans-serif; */
   font-weight: 500;
   color: #ffffff;
   margin: 2rem 0 0 0;
@@ -25,6 +26,10 @@ h2 {
   font-weight: 600;
   padding-bottom: 2.5rem;
   text-align: center;
+}
+h3 {
+  font-family: 'Bebas Neue', 'Jost', 'Helvetica Neue', sans-serif;
+  font-size: 2.5rem;
 }
 .hero {
   background-color: #000000;
