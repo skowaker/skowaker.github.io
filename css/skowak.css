@@ -79,6 +79,11 @@ p, strong {
   margin: 0 auto;
 }
 
+bold {
+  font-size: inherit;
+  font-weight: 400;
+}
+
 .emphasis, .emphasis strong {
   font-size: 2rem;
   /* font-style: italic; */
