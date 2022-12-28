@@ -57,7 +57,7 @@ h3 {
   /* width: 50%; */
 }
 .vision {
-  background-color: #f9f5fb;
+  background-color: #fefbff;
   /* background-image: linear-gradient(120deg, #dbdbdb 0%, #dbdbdb 100%); */
   position: relative;
 }
@@ -81,7 +81,8 @@ p, strong {
 
 .emphasis, .emphasis strong {
   font-size: 2rem;
-  font-style: italic;
+  /* font-style: italic; */
+  font-weight: 300;
 }
 
 .spacer {
