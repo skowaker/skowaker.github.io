@@ -1,6 +1,8 @@
-import { createShader } from 'https://esm.sh/shaders@latest/js'
+import { createShader } from 'https://esm.sh/shaders@3.0.452/js'
 
 const canvas = document.getElementById('hero-shader')
+
+const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)')
 
 if (canvas) {
   // The shader library measures the canvas once via getBoundingClientRect
@@ -58,7 +60,6 @@ if (canvas) {
 
   // Honor prefers-reduced-motion: pause the animation loop but leave the
   // rendered frame in place.
-  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)')
   if (reducedMotion.matches) shader.pause()
   reducedMotion.addEventListener('change', (e) => {
     if (e.matches) shader.pause()
