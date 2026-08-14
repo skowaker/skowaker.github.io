@@ -1,0 +1,65 @@
+# ---------------------------------------------------------------------------
+# skowak.com  open by default. This is a marketing site; being read, quoted
+# and cited by AI answer engines is the entire point.
+# Agent list per PRACTICES/seo-aeo/AEO-IMPLEMENTATION-PLAN.md §1.2.
+# Re-verify quarterly: new agents appear often and this is the file that rots.
+# ---------------------------------------------------------------------------
+User-agent: *
+Allow: /
+
+# --- AI search + retrieval indexes. These feed live AI answers. NEVER block.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+# --- User-triggered fetchers. A human is waiting on these fetches right now
+# --- (including anyone who clicks the "Ask an AI about Skowak" footer block).
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# --- Training crawlers. Deliberate policy choice: open. Skowak has no
+# --- licensable content, and presence in the next model generation is an asset.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Note: Google-Extended and Applebot-Extended are opt-out tokens, not crawlers.
+# They control training use only and have no effect on Search or AI Overviews.
+# Left unset deliberately (= opted in), consistent with the policy above.
+
+# AI-readable corpus: https://skowak.com/llms.txt
+Sitemap: https://skowak.com/sitemap.xml

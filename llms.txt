@@ -1,0 +1,48 @@
+# Skowak
+
+> Skowak is an AI transformation boutique that builds production AI systems for operationally complex, regulated businesses.
+
+Skowak builds production AI systems for operationally complex, regulated businesses. Twenty years turning dense domains into software people actually use.
+
+Skowak works through three engagement tiers built on Evaluation-Driven Design:
+nothing counts until it is running in the client's business and their team can
+maintain it. Domains: insurance underwriting, federal healthcare data, solar and
+energy operations, developer infrastructure, education.
+
+## Engagements
+
+- [AI Opportunity Sprint](https://skowak.com/consulting/#sprint) A 2-3 week fixed-fee engagement that maps where AI can create value in your operation and pressure-tests each candidate against your data, constraints and people before any code is written.
+- [Agentic Workflow Redesign](https://skowak.com/consulting/#workflow-redesign) A 4-6 week fixed-scope engagement that redesigns the workflow around an AI system: agent placement, human-in-the-loop checkpoints, escalation paths, and an evaluation framework for every AI-assisted decision point.
+- [Embedded Build & Prove Retainer](https://skowak.com/consulting/#retainer) A monthly embedded engagement, minimum three months, in which Skowak designs, builds, instruments and proves a production AI system inside your team, then transfers ownership.
+
+## Pages
+
+- [AI Consulting](https://skowak.com/consulting/): Three engagement tiers  from a fixed-fee Sprint to an embedded retainer  all built on Evaluation-Driven Design: nothing counts until it's running in your business.
+- [Start a conversation](https://skowak.com/contact/): Tell Skowak what you're working on. Every message is read personally  expect a reply within two business days.
+- [About](https://skowak.com/about/): Skowak is an AI transformation boutique  twenty years designing and building software for domains that resist it: insurance underwriting, federal healthcare data, solar engineering, developer infrastructure.
+- [Home](https://skowak.com/): Skowak builds production AI systems for operationally complex, regulated businesses. Twenty years turning dense domains into software people actually use.
+- [Work](https://skowak.com/work/): Selected work: twenty years of turning operationally dense domains into systems people use  complex rules, regulated constraints, measured outcomes.
+- [SunPower case study](https://skowak.com/work/sunpower/): Compressing commercial solar design from days to 25 minutes  UX architecture and product design for SunPower's digital platform.
+- [Writing](https://skowak.com/writing/): Articles on building production AI systems  the reliability problem, the evaluation problem, and the gap between demos and workflows.
+- [Craftal case study](https://skowak.com/work/craftal/): Building a research-based multi-agent product-planning system  custom DSL, RAG pipeline, deterministic verification, and structured planning workflows with human review.
+- [Fidelity Life case study](https://skowak.com/work/fidelity-life/): Taking insurance applications from four days to thirty minutes  underwriting, case management, and product configuration for a multi-year transformation.
+- [Building reliable systems out of an unreliable ingredient](https://skowak.com/writing/reliable-systems/): LLMs will produce confident wrong answers. The question isn't whether AI makes mistakes  it's whether you can build reliable systems using this unpredictable ingredient.
+- [Bitscopic — federal healthcare data case study](https://skowak.com/work/federal-health/): Cutting clinical data review effort by up to 80% for Bitscopic — health-data analysis, reporting, and decision-support interfaces inside a government health system.
+
+## AI-readable corpus
+
+Plain-markdown source documents, one topic per file:
+
+- [Index](https://skowak.com/ai/index.md)
+- [Profile](https://skowak.com/ai/profile.md): what Skowak is, who it serves, how it works.
+- [Services](https://skowak.com/ai/services.md): the three engagement tiers with scope and deliverables.
+- [Method](https://skowak.com/ai/method.md): Map / Build / Prove and Evaluation-Driven Design.
+- [FAQ](https://skowak.com/ai/faq.md): common buyer questions with direct answers.
+- [Work](https://skowak.com/ai/work.md): case studies with measured outcomes.
+
+## Contact
+
+- [Start a conversation](https://skowak.com/contact/)
+- [LinkedIn](https://www.linkedin.com/company/skowak)
+
+Generated from the site build. Do not edit by hand.
