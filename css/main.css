@@ -557,6 +557,39 @@
     border-bottom-color: rgba(255, 255, 255, 0.15);
   }
 
+  /* Light mode: nav sits over a light section — white pill, dark text. */
+  .site-header--light .site-header__inner {
+    background: rgba(255, 255, 255, 0.85);
+    -webkit-backdrop-filter: blur(4px) saturate(160%);
+    backdrop-filter: blur(4px) saturate(160%);
+    border-top-color: rgba(0, 0, 0, 0.08);
+    border-left-color: rgba(0, 0, 0, 0.08);
+    border-right-color: rgba(0, 0, 0, 0.06);
+    border-bottom-color: rgba(0, 0, 0, 0.06);
+    color: #15181E;
+  }
+
+  .site-header--light .site-header__logo {
+    color: #15181E;
+  }
+
+  .site-header--light .site-header__link {
+    color: #3B3D45;
+  }
+
+  .site-header--light .site-header__link:hover,
+  .site-header--light .site-header__link:focus-visible {
+    color: #15181E;
+  }
+
+  .site-header--light .site-header__link--active {
+    color: var(--c-accent);
+  }
+
+  .site-header--light .site-header__toggle-bar {
+    background: #15181E;
+  }
+
   .site-header__logo {
     color: var(--c-text);
     display: inline-flex;
