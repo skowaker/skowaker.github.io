@@ -352,7 +352,7 @@
     --c-dark-blue-hi:     #201047;
     --c-dark-blue-line:   rgba(255, 255, 255, 0.14);
     /* Light-blue theme — powder blue derived from the shader accent */
-    --c-light-blue:       #DFEAFB;
+    --c-light-blue:       #EFF6FE;
     --c-light-blue-hi:    #F0F4FD;
     --c-light-blue-line:  #B7CBEE;
     /* Light-gray theme */
@@ -2291,6 +2291,173 @@
 
   .work-card .card__body {
     max-width: 42ch;
+  }
+
+  /* --------------------------------------------------------------------
+     Split work card (homepage "Selected work") — media beside content,
+     sides alternating down the stack so the row reads as a zig-zag.
+     No card chrome: the image carries the elevation, the section
+     background carries the field.
+     -------------------------------------------------------------------- */
+  .work-split-list {
+    display: grid;
+    gap: var(--s-9);
+  }
+
+  .work-split {
+    display: grid;
+    gap: var(--s-6);
+    align-items: center;
+  }
+
+  /* The media takes the wider column. Because the reversed variant moves the
+     image to the second column, its template has to be mirrored too —
+     flipping with `order` alone would drop the image into the narrow track. */
+  @media (min-width: 900px) {
+    .work-split {
+      grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+      gap: var(--s-7);
+    }
+
+    /* Flip the column, not the DOM order, so reading and tab order stay
+       top-to-bottom regardless of which side the image is on. */
+    .work-split--reverse {
+      grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    }
+
+    .work-split--reverse .work-split__media {
+      order: 2;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .work-split {
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+      gap: var(--s-8);
+    }
+
+    .work-split--reverse {
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    }
+  }
+
+  .work-split__media {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-card);
+    aspect-ratio: 16 / 10;
+    background: var(--c-dark-blue);
+    box-shadow: 0 18px 40px -24px rgba(10, 20, 60, 0.45);
+  }
+
+  .work-split__media img {
+    display: block;
+    inline-size: 100%;
+    block-size: 100%;
+    object-fit: cover;
+    transition: transform var(--t-base) ease-out,
+                filter var(--t-base) ease-out;
+  }
+
+  .work-split:hover .work-split__media img,
+  .work-split:focus-within .work-split__media img {
+    transform: scale(1.03);
+    filter: saturate(1.05) contrast(1.06);
+  }
+
+  .work-split__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--s-4);
+  }
+
+  .work-split__eyebrow {
+    font-family: var(--f-sans);
+    font-size: var(--type-eyebrow);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--c-accent);
+  }
+
+  .work-split__title {
+    font-size: var(--type-h2);
+    letter-spacing: -0.01em;
+  }
+
+  .work-split__title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .work-split__title a:hover,
+  .work-split__title a:focus-visible {
+    color: var(--c-accent);
+  }
+
+  .work-split__body {
+    color: var(--c-text-muted);
+    max-width: var(--measure-lead);
+  }
+
+  .work-split__points {
+    display: grid;
+    gap: var(--s-3);
+    list-style: none;
+    padding: 0;
+  }
+
+  .work-split__points li {
+    position: relative;
+    padding-inline-start: var(--s-5);
+    color: var(--c-text-muted);
+    font-size: var(--type-small);
+    line-height: 1.55;
+  }
+
+  /* Checkmark sits in the hanging indent, optically aligned to the first line. */
+  .work-split__points li::before {
+    content: '✓';
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-start: 0;
+    color: var(--c-accent);
+    font-weight: 700;
+  }
+
+  .work-split__points strong {
+    color: var(--c-text);
+    font-weight: 600;
+  }
+
+  .work-split__foot {
+    margin-block-start: var(--s-2);
+  }
+
+  /* Nudges forward on hover — the arrow reads as direction, not decoration. */
+  .btn__arrow {
+    display: inline-block;
+    transition: transform var(--t-fast) ease-out;
+  }
+
+  .btn:hover .btn__arrow,
+  .btn:focus-visible .btn__arrow {
+    transform: translateX(2px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn__arrow,
+    .work-split__media img {
+      transition: none;
+    }
+
+    .btn:hover .btn__arrow,
+    .btn:focus-visible .btn__arrow,
+    .work-split:hover .work-split__media img,
+    .work-split:focus-within .work-split__media img {
+      transform: none;
+    }
   }
 
   /* --------------------------------------------------------------------
