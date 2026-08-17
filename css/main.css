@@ -526,7 +526,7 @@
     pointer-events: auto;
     border-radius: var(--radius-pill);
     color: #F0F0F5;
-    background: rgba(10, 20, 60, 0.55);
+    background: rgba(10, 20, 60, 0.15);
     -webkit-backdrop-filter: blur(1px) saturate(160%);
     backdrop-filter: blur(4px) saturate(160%);
     border-top: 1px solid rgba(0, 0, 0, 0.25);
@@ -550,7 +550,7 @@
 
   .site-header--scrolled .site-header__inner {
     block-size: 66px;
-    background: rgba(10, 20, 60, 0.85);
+    background: rgba(10, 20, 60, 0.15);
     border-top-color: rgba(0, 0, 0, 0.25);
     border-left-color: rgba(0, 0, 0, 0.25);
     border-right-color: rgba(255, 255, 255, 0.15);
@@ -559,7 +559,7 @@
 
   /* Light mode: nav sits over a light section — white pill, dark text. */
   .site-header--light .site-header__inner {
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.45);
     -webkit-backdrop-filter: blur(4px) saturate(160%);
     backdrop-filter: blur(4px) saturate(160%);
     border-top-color: rgba(0, 0, 0, 0.08);
@@ -1536,13 +1536,19 @@
      Section scaffolding shared across pages
      -------------------------------------------------------------------- */
   .section-heading {
-    margin-block-end: var(--s-7);
-    max-width: 24ch;
+    margin-block-end: var(--s-6);
+    max-width: none;
+    font-size: var(--type-h1);
+    line-height: 1.1;
   }
 
   .section-intro {
     margin-block-end: var(--s-7);
+    max-width: none;
     color: var(--c-text-muted);
+    font-size: var(--type-lead);
+    letter-spacing: -0.01em;
+    line-height: 1.5;
   }
 
   .section-foot {
@@ -2224,11 +2230,66 @@
     }
   }
 
+  /* --------------------------------------------------------------------
+     Work index — featured card on top, three cards in a row below.
+     The featured card uses a horizontal media/content split at desktop;
+     the three secondary cards form a responsive grid that collapses
+     to one column on narrow screens.
+     -------------------------------------------------------------------- */
+  .work-index {
+    display: grid;
+    gap: 10px;
+  }
+
+  /* Featured card: horizontal split at desktop, stacked on mobile. */
+  .work-index__feature {
+    display: grid;
+    gap: 0;
+    overflow: hidden;
+    border-radius: var(--radius-card);
+  }
+
+  @media (min-width: 900px) {
+    .work-index__feature {
+      grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+      align-items: stretch;
+    }
+
+    .work-index__feature .work-card__media {
+      aspect-ratio: auto;
+      block-size: 100%;
+    }
+
+    .work-index__feature .work-card__content {
+      justify-content: center;
+    }
+  }
+
+  /* Secondary row: three cards side by side on desktop, auto-fit on tablet. */
+  .work-index__row {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 768px) {
+    .work-index__row {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    /* Double the image height on the 3-column row cards. */
+    .work-index__row .work-card__media {
+      aspect-ratio: 16 / 20;
+    }
+  }
+
   .work-card {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     padding: 0;
+    border-radius: var(--radius-card);
+    border: none;
     background:
       linear-gradient(180deg, color-mix(in srgb, var(--c-accent) 9%, transparent), transparent 36%),
       var(--c-surface);
@@ -2246,7 +2307,7 @@
     position: relative;
     aspect-ratio: 16 / 10;
     overflow: hidden;
-    border-block-end: 1px solid var(--c-border);
+    border-radius: var(--radius-card) var(--radius-card) 0 0;
     background: var(--c-dark-blue);
   }
 
@@ -2283,6 +2344,8 @@
     flex-direction: column;
     gap: var(--s-4);
     padding: var(--s-5);
+    margin-block-start: 0;
+    background: #fff;
   }
 
   .work-card__content > * + * {
