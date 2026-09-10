@@ -46,11 +46,11 @@
         "knowsAbout": ["Applied AI","AI evaluation","Evaluation-Driven Design","Retrieval-augmented generation","Agentic workflow design","Workflow automation","Regulated systems design","Insurance underwriting systems","Federal healthcare data systems"],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "AI consulting engagements",
+          "name": "AI services engagements",
           "itemListElement": [
             {
               "@type": "Offer",
-              "url": "https://skowak.com/consulting/#sprint",
+              "url": "https://skowak.com/services/ai-opportunity-sprint/",
               "itemOffered": {
                 "@type": "Service",
                 "name": "AI Opportunity Sprint",
@@ -60,7 +60,7 @@
             },
             {
               "@type": "Offer",
-              "url": "https://skowak.com/consulting/#workflow-redesign",
+              "url": "https://skowak.com/services/agentic-workflow-redesign/",
               "itemOffered": {
                 "@type": "Service",
                 "name": "Agentic Workflow Redesign",
@@ -70,10 +70,10 @@
             },
             {
               "@type": "Offer",
-              "url": "https://skowak.com/consulting/#retainer",
+              "url": "https://skowak.com/services/forward-deployed-design-engineering/",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Embedded Build &amp; Prove Retainer",
+                "name": "Forward-Deployed Design Engineering",
                 "description": "A monthly embedded engagement, minimum three months, in which Skowak designs, builds, instruments and proves a production AI system inside your team, then transfers ownership.",
                 "provider": { "@id": "https://skowak.com/#organization" }
               }
@@ -132,6 +132,7 @@
 
   <script type="module" src="../../js/nav.js"></script>
   <script type="module" src="../../js/nav-scroll.js"></script>
+  <script type="module" src="../../js/nav-dropdown.js"></script>
   <script type="module" src="../../js/reveal.js"></script>
   <script type="module" src="../../js/contact-modal.js"></script>
   <script type="module" src="../../js/halftone-swirl.js"></script>
@@ -148,7 +149,21 @@
     </a>
     <nav class="site-header__nav" aria-label="Primary">
       <ul class="site-header__list">
-        <li><a class="site-header__link" href="../../consulting/">Consulting</a></li>
+        <li class="site-header__item site-header__item--dropdown">
+          <a class="site-header__link site-header__link--trigger" href="../../services/" aria-haspopup="true" aria-expanded="false">
+            Services
+            <svg class="site-header__chevron" width="10" height="10" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"/></svg>
+          </a>
+          <div class="site-header__dropdown">
+            <ul class="site-header__dropdown-list">
+              <li><a class="site-header__dropdown-link" href="../../services/">All services</a></li>
+              <li><a class="site-header__dropdown-link" href="../../services/ai-opportunity-sprint/">AI Opportunity Sprint</a></li>
+              <li><a class="site-header__dropdown-link" href="../../services/agentic-workflow-redesign/">Agentic Workflow Redesign</a></li>
+              <li><a class="site-header__dropdown-link" href="../../services/forward-deployed-design-engineering/">Forward-Deployed Design Engineering</a></li>
+              <li><a class="site-header__dropdown-link" href="../../services/ai-workforce-transformation/">AI Workforce Transformation &amp; Apprenticeship</a></li>
+            </ul>
+          </div>
+        </li>
         <li><a class="site-header__link site-header__link--active" href="../../work/">Work</a></li>
         <li><a class="site-header__link" href="../../writing/">Writing</a></li>
         <li><a class="site-header__link" href="../../about/">About</a></li>
@@ -163,7 +178,15 @@
   </div>
   <nav class="mobile-nav" id="mobile-nav" aria-label="Primary, mobile" hidden>
     <ul class="mobile-nav__list">
-      <li><a class="mobile-nav__link" href="../../consulting/">Consulting</a></li>
+      <li>
+        <a class="mobile-nav__link" href="../../services/">Services</a>
+        <ul class="mobile-nav__sublist">
+          <li><a class="mobile-nav__sublink" href="../../services/ai-opportunity-sprint/">AI Opportunity Sprint</a></li>
+          <li><a class="mobile-nav__sublink" href="../../services/agentic-workflow-redesign/">Agentic Workflow Redesign</a></li>
+          <li><a class="mobile-nav__sublink" href="../../services/forward-deployed-design-engineering/">Forward-Deployed Design Engineering</a></li>
+          <li><a class="mobile-nav__sublink" href="../../services/ai-workforce-transformation/">AI Workforce Transformation &amp; Apprenticeship</a></li>
+        </ul>
+      </li>
       <li><a class="mobile-nav__link" href="../../work/">Work</a></li>
       <li><a class="mobile-nav__link" href="../../writing/">Writing</a></li>
       <li><a class="mobile-nav__link" href="../../about/">About</a></li>
@@ -176,10 +199,7 @@
     
 
 <article>
-  <header class="hero hero--page hero--image case-head">
-    <div class="hero__bg">
-      <img src="../../assets/img/work/craftal-hero.webp" alt="" aria-hidden="true" fetchpriority="high" width="1280" height="853">
-    </div>
+  <header class="hero hero--page hero--image hero--shader case-head" style="background-image: url('/assets/img/work/craftal-hero.webp')">
     <div class="hero__inner">
       <p class="case-head__sector">AI-native product · Multi-agent system · Own system</p>
       <h1 class="hero__heading">A multi-agent system for research-based product planning</h1>
@@ -190,9 +210,6 @@
   <section class="section section--gray section--flush case-body" data-reveal>
   <div class="container case-layout">
     <section class="case-layout__section">
-      
-<p class="eyebrow">01</p>
-
       <h2>Problem</h2>
       <div class="prose">
         <p>Product planning in complex domains is a research problem disguised as a management task. The inputs are scattered across documents, conversations, market signals, workflow diagrams, and domain knowledge that no single person holds. Traditional planning tools treat this as project management  lists, timelines, dependencies. But the hard part happens before the list exists: deciding what to build, and knowing whether the reasoning that led there is sound.</p>
@@ -201,9 +218,6 @@
     </section>
 
     <section class="case-layout__section">
-      
-<p class="eyebrow">02</p>
-
       <h2>Approach</h2>
       <div class="prose">
         <p>Craftal uses multiple AI agents orchestrated through a custom domain-specific language, with a RAG pipeline that grounds every planning decision in actual research  documents, market data, competitive intelligence, and prior decisions. The agents don't plan in isolation; they produce structured outputs that pass through a deterministic verification core before a human reviewer sees them.</p>
@@ -220,9 +234,6 @@
     </section>
 
     <section class="case-layout__section">
-      
-<p class="eyebrow">03</p>
-
       <h2>Impact</h2>
       <ul class="offer-list case-impact">
         <li>Moves product intent into a consistent <strong>workflow specification</strong> that teams can inspect spatially, hierarchically, and sequentially</li>
@@ -240,9 +251,6 @@
     </section>
 
     <section class="case-layout__section">
-      
-<p class="eyebrow">04</p>
-
       <h2>What made it work</h2>
       <div class="prose">
         <p>The same principle that runs through every Skowak engagement: separate what needs a human from what doesn't, then instrument the boundary. In Craftal's case, the agents handle synthesis and structure; the verification core handles consistency; the simulation view makes behavior reviewable before implementation; the human handles judgment. Each layer has clear evaluation criteria, and the system knows which layer caught what.</p>
@@ -280,14 +288,11 @@
   <canvas id="closing-shader" class="closing__canvas" aria-hidden="true"></canvas>
   <div class="closing__inner">
     <div class="closing__panel">
-      
-<p class="eyebrow">Start here</p>
-
       <h2 class="closing__heading">What are you trying to build?</h2>
       <p class="closing__body">If you&#39;re evaluating where AI fits in your operation or you have a project stalled between demo and production, that&#39;s the conversation Skowak is built for.</p>
       <p class="closing__actions">
         <a class="btn btn--primary" href="../../contact/" data-contact-modal>Start a conversation</a>
-        <a class="btn btn--secondary" href="../../consulting/#process">See how we work</a>
+        <a class="btn btn--secondary" href="../../services/#process">See how we work</a>
       </p>
     </div>
   </div>
@@ -305,7 +310,7 @@
     </div>
     <nav class="site-footer__nav" aria-label="Footer">
       <ul class="site-footer__list">
-        <li><a href="../../consulting/">Consulting</a></li>
+        <li><a href="../../services/">Services</a></li>
         <li><a href="../../work/">Work</a></li>
         <li><a href="../../writing/">Writing</a></li>
         <li><a href="../../about/">About</a></li>
@@ -339,7 +344,6 @@
       <span aria-hidden="true">&times;</span>
     </button>
     <div class="contact-modal__intro">
-      <p class="eyebrow">Start a conversation</p>
       <h2 id="contact-modal-title">What are you trying to build?</h2>
       <p>Share the operational context and the first constraint that makes the project hard. Every message is read personally.</p>
     </div>

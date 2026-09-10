@@ -11,23 +11,27 @@ energy operations, developer infrastructure, education.
 
 ## Engagements
 
-- [AI Opportunity Sprint](https://skowak.com/consulting/#sprint) A 2-3 week fixed-fee engagement that maps where AI can create value in your operation and pressure-tests each candidate against your data, constraints and people before any code is written.
-- [Agentic Workflow Redesign](https://skowak.com/consulting/#workflow-redesign) A 4-6 week fixed-scope engagement that redesigns the workflow around an AI system: agent placement, human-in-the-loop checkpoints, escalation paths, and an evaluation framework for every AI-assisted decision point.
-- [Embedded Build & Prove Retainer](https://skowak.com/consulting/#retainer) A monthly embedded engagement, minimum three months, in which Skowak designs, builds, instruments and proves a production AI system inside your team, then transfers ownership.
+- [AI Opportunity Sprint](https://skowak.com/services/ai-opportunity-sprint/) A 2-3 week fixed-fee engagement that maps where AI can create value in your operation and pressure-tests each candidate against your data, constraints and people before any code is written.
+- [Agentic Workflow Redesign](https://skowak.com/services/agentic-workflow-redesign/) A 4-6 week fixed-scope engagement that redesigns the workflow around an AI system: agent placement, human-in-the-loop checkpoints, escalation paths, and an evaluation framework for every AI-assisted decision point.
+- [Forward-Deployed Design Engineering](https://skowak.com/services/forward-deployed-design-engineering/) A monthly embedded engagement, minimum three months, in which Skowak designs, builds, instruments and proves a production AI system inside your team, then transfers ownership.
 
 ## Pages
 
-- [AI Consulting](https://skowak.com/consulting/): Three engagement tiers  from a fixed-fee Sprint to an embedded retainer  all built on Evaluation-Driven Design: nothing counts until it's running in your business.
+- [Building reliable systems out of an unreliable ingredient](https://skowak.com/writing/reliable-systems/): LLMs will produce confident wrong answers. The question isn't whether AI makes mistakes  it's whether you can build reliable systems using this unpredictable ingredient.
 - [Start a conversation](https://skowak.com/contact/): Tell Skowak what you're working on. Every message is read personally  expect a reply within two business days.
 - [About](https://skowak.com/about/): Skowak is an AI transformation boutique  twenty years designing and building software for domains that resist it: insurance underwriting, federal healthcare data, solar engineering, developer infrastructure.
-- [Home](https://skowak.com/): Skowak builds production AI systems for operationally complex, regulated businesses. Twenty years turning dense domains into software people actually use.
-- [Work](https://skowak.com/work/): Selected work: twenty years of turning operationally dense domains into systems people use  complex rules, regulated constraints, measured outcomes.
-- [SunPower case study](https://skowak.com/work/sunpower/): Compressing commercial solar design from days to 25 minutes  UX architecture and product design for SunPower's digital platform.
 - [Writing](https://skowak.com/writing/): Articles on building production AI systems  the reliability problem, the evaluation problem, and the gap between demos and workflows.
+- [SunPower case study](https://skowak.com/work/sunpower/): Compressing commercial solar design from days to 25 minutes  UX architecture and product design for SunPower's digital platform.
+- [Bitscopic, federal healthcare data case study](https://skowak.com/work/federal-health/): Cutting clinical data review effort by up to 80% for Bitscopic, health-data analysis, reporting, and decision-support interfaces inside a government health system.
 - [Craftal case study](https://skowak.com/work/craftal/): Building a research-based multi-agent product-planning system  custom DSL, RAG pipeline, deterministic verification, and structured planning workflows with human review.
 - [Fidelity Life case study](https://skowak.com/work/fidelity-life/): Taking insurance applications from four days to thirty minutes  underwriting, case management, and product configuration for a multi-year transformation.
-- [Building reliable systems out of an unreliable ingredient](https://skowak.com/writing/reliable-systems/): LLMs will produce confident wrong answers. The question isn't whether AI makes mistakes  it's whether you can build reliable systems using this unpredictable ingredient.
-- [Bitscopic — federal healthcare data case study](https://skowak.com/work/federal-health/): Cutting clinical data review effort by up to 80% for Bitscopic — health-data analysis, reporting, and decision-support interfaces inside a government health system.
+- [Work](https://skowak.com/work/): Selected work: twenty years of turning operationally dense domains into systems people use  complex rules, regulated constraints, measured outcomes.
+- [AI Services](https://skowak.com/services/): Three engagement tiers  from a fixed-fee Sprint to an embedded retainer  all built on Evaluation-Driven Design: nothing counts until it's running in your business.
+- [Agentic Workflow Redesign](https://skowak.com/services/agentic-workflow-redesign/): A 4–6 week fixed-scope engagement that redesigns the workflow around an AI system: agent placement, human-in-the-loop checkpoints, escalation paths, and an evaluation framework for every AI-assisted decision point.
+- [AI Opportunity Sprint](https://skowak.com/services/ai-opportunity-sprint/): A 2–3 week fixed-fee engagement that maps where AI can create value in your operation and pressure-tests each candidate against your data, constraints and people before any code is written.
+- [Forward-Deployed Design Engineering](https://skowak.com/services/forward-deployed-design-engineering/): An embedded engagement, minimum three months, in which Skowak designs, builds, instruments and proves a production AI system inside your team, then transfers ownership.
+- [AI Workforce Transformation & Apprenticeship](https://skowak.com/services/ai-workforce-transformation/): Skowak helps enterprise and government organizations redesign roles, workflows, skills, and operating models for a workforce where humans and AI systems work together, connecting workforce strategy, AI implementation, training, and human-agent orchestration into one transformation system.
+- [Home](https://skowak.com/): Skowak builds production AI systems for operationally complex, regulated businesses. Twenty years turning dense domains into software people actually use.
 
 ## AI-readable corpus
 

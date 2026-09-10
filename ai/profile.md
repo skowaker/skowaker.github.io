@@ -1,9 +1,9 @@
 ---
 type: organization
-title: Skowak — profile
+title: Skowak, profile
 description: Skowak is an AI transformation boutique that builds production AI systems for operationally complex, regulated businesses.
 resource: https://skowak.com/about/
-tags: [skowak, ai-consulting, profile, regulated]
+tags: [skowak, ai-services, profile, regulated]
 ---
 
 # Skowak
@@ -19,8 +19,8 @@ infrastructure.
 ## Who does Skowak work with?
 
 Organizations with an AI project stalled between prototype and production, whose
-operation is genuinely complex — regulated, multi-stakeholder, or built on
-decades of accumulated process — and who need one person who can design the
+operation is genuinely complex, regulated, multi-stakeholder, or built on
+decades of accumulated process, and who need one person who can design the
 system and build it rather than one or the other. Skowak works with startups
 from garage to Series A and with enterprises of thousands of employees.
 
@@ -35,7 +35,7 @@ rate. For a large multi-year program, hire a firm.
 The person who runs discovery is the person who builds the system. No
 translation loss, no staffing surprise, no junior team learning the client's
 domain on the client's budget. Engagements are structured around handoff rather
-than dependency — the goal is to make Skowak unnecessary as quickly as possible.
+than dependency, the goal is to make Skowak unnecessary as quickly as possible.
 
 ## What domains has Skowak worked in?
 

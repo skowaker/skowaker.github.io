@@ -1,9 +1,9 @@
 ---
 type: services
-title: Skowak — engagements
-description: Skowak's three AI consulting engagement tiers — AI Opportunity Sprint, Agentic Workflow Redesign, and Embedded Build & Prove Retainer — with scope and deliverables.
-resource: https://skowak.com/consulting/
-tags: [services, ai-consulting, engagements]
+title: Skowak, engagements
+description: Skowak's three AI services engagement tiers, AI Opportunity Sprint, Agentic Workflow Redesign, and Forward-Deployed Design Engineering, with scope and deliverables.
+resource: https://skowak.com/services/
+tags: [services, ai-services, engagements]
 ---
 
 # Skowak engagements
@@ -11,7 +11,7 @@ tags: [services, ai-consulting, engagements]
 Three tiers, one principle: nothing counts until it is running in the client's
 business and their team can maintain it. A client can enter at any tier.
 
-## Tier one — AI Opportunity Sprint
+## Tier one, AI Opportunity Sprint
 
 **2–3 weeks · fixed fee**
 
@@ -29,7 +29,7 @@ The deliverable belongs to the client whether or not the engagement continues.
 If the Sprint concludes a project should not be built, that is the cheapest
 useful answer available.
 
-## Tier two — Agentic Workflow Redesign
+## Tier two, Agentic Workflow Redesign
 
 **4–6 weeks · fixed scope**
 
@@ -45,14 +45,14 @@ escalation paths; an evaluation framework for every AI-assisted decision point;
 a RACI matrix and traceability diagrams for governance and audit; and a pilot
 action plan that bridges to implementation.
 
-## Tier three — Embedded Build & Prove Retainer
+## Tier three, Forward-Deployed Design Engineering
 
 **Monthly · minimum 3 months**
 
 Skowak works inside the client's team. The system gets designed, built,
 instrumented and proved, and Skowak stays until it is in production, the
 client's people can maintain it, and there is a plan for what comes next. This
-is not advisory — Skowak writes code, reviews the team's code, and owns delivery.
+is not advisory, Skowak writes code, reviews the team's code, and owns delivery.
 
 Deliverables: a production AI system built end to end; evaluation harnesses;
 a performance dashboard tracking accuracy, reliability, adoption and business
