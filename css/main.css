@@ -315,7 +315,7 @@
   }
 
   /* Anchor targets must clear the fixed header (64px) or the heading lands
-     underneath it. Applies to /consulting#discovery-sprint, #retainer, #process. */
+     underneath it. Applies to /services#discovery-sprint, #retainer, #process. */
   :target,
   [id] {
     scroll-margin-block-start: calc(64px + var(--s-6));
@@ -664,7 +664,107 @@
   }
 
   .site-header__link--active {
-    color: var(--c-accent);
+    /* Gold by default (matches the primary CTA); overridden to the blue
+       accent under .site-header--light, where gold loses contrast against
+       a light pill background. */
+    color: #EDCF7C;
+  }
+
+  /* Services dropdown — hover-revealed flyout under the nav item, modelled
+     on Indicium AI's solutions menu: a glass panel bridged to the trigger
+     by padding so the pointer path from link to panel never breaks. */
+  .site-header__item {
+    position: relative;
+  }
+
+  .site-header__link--trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s-1);
+  }
+
+  .site-header__chevron {
+    transition: transform var(--t-fast) ease-out;
+  }
+
+  .site-header__item--dropdown:hover .site-header__chevron,
+  .site-header__item--dropdown.is-open .site-header__chevron {
+    transform: rotate(180deg);
+  }
+
+  .site-header__dropdown {
+    position: absolute;
+    inset-block-start: 100%;
+    inset-inline-start: 0;
+    padding-block-start: var(--s-3);
+    inline-size: max-content;
+    min-inline-size: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4px);
+    transition: opacity var(--t-base) ease-out,
+                transform var(--t-base) ease-out,
+                visibility 0s linear var(--t-base);
+    pointer-events: none;
+  }
+
+  .site-header__item--dropdown:hover .site-header__dropdown,
+  .site-header__item--dropdown.is-open .site-header__dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity var(--t-base) ease-out,
+                transform var(--t-base) ease-out;
+    pointer-events: auto;
+  }
+
+  .site-header__dropdown-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-1);
+    padding: var(--s-3);
+    border-radius: var(--radius-card);
+    background: rgba(10, 20, 60, 0.55);
+    -webkit-backdrop-filter: blur(12px) saturate(160%);
+    backdrop-filter: blur(12px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+  }
+
+  .site-header--light .site-header__dropdown-list {
+    background: rgba(255, 255, 255, 0.75);
+    border-color: rgba(0, 0, 0, 0.08);
+  }
+
+  .site-header__dropdown-link {
+    display: block;
+    font-size: var(--type-small);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--c-text-muted);
+    text-decoration: none;
+    /* Was nowrap; the workforce-transformation label is long enough to
+       need a wrap so the flyout doesn't overflow the viewport. */
+    max-inline-size: 26ch;
+    padding: var(--s-2) var(--s-3);
+    border-radius: var(--radius);
+    transition: color var(--t-fast) ease-out, background-color var(--t-fast) ease-out;
+  }
+
+  .site-header__dropdown-link:hover,
+  .site-header__dropdown-link:focus-visible {
+    color: var(--c-text);
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .site-header--light .site-header__dropdown-link {
+    color: #3B3D45;
+  }
+
+  .site-header--light .site-header__dropdown-link:hover,
+  .site-header--light .site-header__dropdown-link:focus-visible {
+    color: #15181E;
+    background: rgba(0, 0, 0, 0.05);
   }
 
   .site-header__cta {
@@ -748,6 +848,28 @@
   }
 
   .mobile-nav__link--cta {
+    color: var(--c-accent);
+  }
+
+  .mobile-nav__sublist {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-2);
+    margin-block-start: var(--s-3);
+    padding-inline-start: var(--s-4);
+    border-inline-start: 1px solid var(--c-border);
+  }
+
+  .mobile-nav__sublink {
+    font-family: var(--f-body, inherit);
+    font-size: var(--type-small);
+    font-weight: 500;
+    color: var(--c-text-muted);
+    text-decoration: none;
+  }
+
+  .mobile-nav__sublink:hover,
+  .mobile-nav__sublink:focus-visible {
     color: var(--c-accent);
   }
 
@@ -911,21 +1033,6 @@
   .arrow-link:hover .arrow-link__arrow {
     transform: translateX(2px);
   }
-
-  /* --------------------------------------------------------------------
-     Section eyebrow — mono, uppercase, short accent rule above
-     -------------------------------------------------------------------- */
-  .eyebrow {
-    font-family: var(--f-sans);
-    font-size: var(--type-eyebrow);
-    font-weight: 600;
-    letter-spacing: var(--track-eyebrow);
-    text-transform: uppercase;
-    color: var(--c-text-muted);
-    margin-block-end: var(--s-5);
-  }
-
-  /* DESIGN.md eyebrow is a plain uppercase label — no decorative rule */
 
   /* --------------------------------------------------------------------
      Cards
@@ -1251,6 +1358,8 @@
   }
 
   .hero__inner > .logo-mark {
+    /* Stays centred even where the rest of the hero copy is left-aligned. */
+    align-self: center;
     inline-size: 64px;
     block-size: 64px;
     margin-block-end: var(--s-7);
@@ -1301,13 +1410,17 @@
   }
 
   .hero:not(.hero--page) .hero__heading {
-    max-width: 15ch;
-  }
-
-  .hero:not(.hero--page) .hero__heading {
     font-size: var(--type-display);
     letter-spacing: var(--track-display);
     line-height: 1.17;
+  }
+
+  /* Heading and sub-copy share one max-width so their right edges line up —
+     "ch" alone can't do this since the two elements sit at very different
+     font sizes; a fixed unit is needed for both. */
+  .hero:not(.hero--page) .hero__heading,
+  .hero:not(.hero--page) .hero__sub {
+    max-width: 52rem;
   }
 
   /* body-lg: 18px at a deliberately relaxed 1.69 line-height */
@@ -1394,6 +1507,32 @@
     background-repeat: no-repeat;
   }
 
+  .hero--page.hero--image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to right,
+      rgba(32, 4, 82, 0.95) 25%,
+      rgba(32, 4, 82, 0.7) 100%
+    );
+  }
+
+  .hero--page.hero--image::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 240%;
+    height: 240%;
+    z-index: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Ccircle cx='4' cy='4' r='2' fill='%231580ed' opacity='0.3'/%3E%3C/svg%3E") repeat;
+    background-size: 6px 6px;
+    transform: rotate(45deg);
+    transform-origin: center;
+  }
+
 
   /* Shader hero (home): cover the viewport exactly — not beyond.
      dvh accounts for the mobile URL bar; vh is the static fallback. */
@@ -1422,8 +1561,57 @@
 
   .hero--shader > .hero__inner {
     z-index: 2;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* Inner-page heroes (services pages) reuse the halftone shader for its
+     dotted background, but keep the .hero--page height cap instead of the
+     homepage's full-viewport treatment. Both now share the same left
+     alignment as every other hero on the site. */
+  .hero--page.hero--shader {
+    block-size: auto;
+    /* .hero__canvas targets `grid-area: stack`, but .hero--page never
+       defines that named area (only .hero--image does). Without it, the
+       browser resolves the absolutely-positioned canvas against an
+       auto-placed implicit grid cell instead of the full container —
+       shifting it completely off to the side, invisible. This line is
+       what makes `grid-area: stack` resolve to the whole hero. */
+    grid-template-areas: "stack";
+  }
+
+  /* Case study heroes combine hero--image (for background-size/position/
+     repeat) with hero--shader (for content-driven block-size: auto).
+     Without this override, .hero--page.hero--image's min-height: min(72vh,
+     760px) would reapply and push the hero far below the fold. */
+  .hero--page.hero--image.hero--shader {
+    min-height: 0;
+    block-size: auto;
+  }
+
+  /* The radial mask above was tuned for the homepage's full-viewport hero
+     (~900px+ tall), where the ellipse's fade zone is a small fraction of
+     the total height. On the much shorter .hero--page hero, that same
+     ellipse fades out well before it reaches the top — which is exactly
+     where the floating header sits — so the area behind the nav read as a
+     flat, dot-less band. This variant only needs to dissolve into the page
+     below it, not fade at the top too, so it gets a plain top-to-bottom
+     mask that stays fully opaque until near the bottom. */
+  .hero--page.hero--shader .hero__canvas {
+    /* Reset grid-area: stack from the base .hero__canvas rule. With an
+       explicit grid-area, the absolutely positioned canvas resolves its
+       containing block against the grid area (content box), which excludes
+       the hero's top padding — leaving the area behind the fixed nav
+       dot-less. With grid-area: auto, the containing block falls back to
+       the grid container's padding box, so inset:0 covers the full hero
+       including the padding zone where the nav sits. */
+    grid-area: auto;
+    -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 75%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 75%, transparent 100%);
+  }
+
+  .hero--page.hero--shader > .hero__inner {
+    position: relative;
   }
 
   .hero--image > .hero__inner {
@@ -1572,14 +1760,6 @@
        the container gutters at the edges. */
     padding-block: var(--s-5);
     text-align: center;
-  }
-
-  /* Centre the eyebrow above the marquee — without recentering the whole
-     component. `text-align: center` on .cred is enough because .eyebrow is
-     block by default and inline-sized to its content. */
-  .cred .eyebrow {
-    display: inline-block;
-    margin-inline: auto;
   }
 
   /* On the white cred variant, invert the pure-white SVG marks to black. */
@@ -2197,7 +2377,7 @@
     max-width: 12ch;
   }
 
-  .contact-modal__intro p:not(.eyebrow) {
+  .contact-modal__intro p {
     margin-block-start: var(--s-4);
     max-width: var(--measure-lead);
     color: var(--c-text-muted);
@@ -2897,7 +3077,7 @@
   }
 
   /* --------------------------------------------------------------------
-     Offer risk-reversal callout (consulting page)
+     Offer risk-reversal callout (services page)
      -------------------------------------------------------------------- */
   .offer-reversal {
     font-size: var(--type-small);

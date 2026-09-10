@@ -46,11 +46,11 @@
         "knowsAbout": ["Applied AI","AI evaluation","Evaluation-Driven Design","Retrieval-augmented generation","Agentic workflow design","Workflow automation","Regulated systems design","Insurance underwriting systems","Federal healthcare data systems"],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "AI consulting engagements",
+          "name": "AI services engagements",
           "itemListElement": [
             {
               "@type": "Offer",
-              "url": "https://skowak.com/consulting/#sprint",
+              "url": "https://skowak.com/services/ai-opportunity-sprint/",
               "itemOffered": {
                 "@type": "Service",
                 "name": "AI Opportunity Sprint",
@@ -60,7 +60,7 @@
             },
             {
               "@type": "Offer",
-              "url": "https://skowak.com/consulting/#workflow-redesign",
+              "url": "https://skowak.com/services/agentic-workflow-redesign/",
               "itemOffered": {
                 "@type": "Service",
                 "name": "Agentic Workflow Redesign",
@@ -70,10 +70,10 @@
             },
             {
               "@type": "Offer",
-              "url": "https://skowak.com/consulting/#retainer",
+              "url": "https://skowak.com/services/forward-deployed-design-engineering/",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Embedded Build &amp; Prove Retainer",
+                "name": "Forward-Deployed Design Engineering",
                 "description": "A monthly embedded engagement, minimum three months, in which Skowak designs, builds, instruments and proves a production AI system inside your team, then transfers ownership.",
                 "provider": { "@id": "https://skowak.com/#organization" }
               }
@@ -107,6 +107,7 @@
 
   <script type="module" src="./js/nav.js"></script>
   <script type="module" src="./js/nav-scroll.js"></script>
+  <script type="module" src="./js/nav-dropdown.js"></script>
   <script type="module" src="./js/reveal.js"></script>
   <script type="module" src="./js/contact-modal.js"></script>
   <script type="module" src="./js/halftone-swirl.js"></script>
@@ -123,7 +124,21 @@
     </a>
     <nav class="site-header__nav" aria-label="Primary">
       <ul class="site-header__list">
-        <li><a class="site-header__link" href="./consulting/">Consulting</a></li>
+        <li class="site-header__item site-header__item--dropdown">
+          <a class="site-header__link site-header__link--trigger" href="./services/" aria-haspopup="true" aria-expanded="false">
+            Services
+            <svg class="site-header__chevron" width="10" height="10" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.55806 6.29544C2.46043 6.19781 2.46043 6.03952 2.55806 5.94189L3.44195 5.058C3.53958 4.96037 3.69787 4.96037 3.7955 5.058L8.00001 9.26251L12.2045 5.058C12.3021 4.96037 12.4604 4.96037 12.5581 5.058L13.4419 5.94189C13.5396 6.03952 13.5396 6.19781 13.4419 6.29544L8.17678 11.5606C8.07915 11.6582 7.92086 11.6582 7.82323 11.5606L2.55806 6.29544Z" fill="currentColor"/></svg>
+          </a>
+          <div class="site-header__dropdown">
+            <ul class="site-header__dropdown-list">
+              <li><a class="site-header__dropdown-link" href="./services/">All services</a></li>
+              <li><a class="site-header__dropdown-link" href="./services/ai-opportunity-sprint/">AI Opportunity Sprint</a></li>
+              <li><a class="site-header__dropdown-link" href="./services/agentic-workflow-redesign/">Agentic Workflow Redesign</a></li>
+              <li><a class="site-header__dropdown-link" href="./services/forward-deployed-design-engineering/">Forward-Deployed Design Engineering</a></li>
+              <li><a class="site-header__dropdown-link" href="./services/ai-workforce-transformation/">AI Workforce Transformation &amp; Apprenticeship</a></li>
+            </ul>
+          </div>
+        </li>
         <li><a class="site-header__link" href="./work/">Work</a></li>
         <li><a class="site-header__link" href="./writing/">Writing</a></li>
         <li><a class="site-header__link" href="./about/">About</a></li>
@@ -138,7 +153,15 @@
   </div>
   <nav class="mobile-nav" id="mobile-nav" aria-label="Primary, mobile" hidden>
     <ul class="mobile-nav__list">
-      <li><a class="mobile-nav__link" href="./consulting/">Consulting</a></li>
+      <li>
+        <a class="mobile-nav__link" href="./services/">Services</a>
+        <ul class="mobile-nav__sublist">
+          <li><a class="mobile-nav__sublink" href="./services/ai-opportunity-sprint/">AI Opportunity Sprint</a></li>
+          <li><a class="mobile-nav__sublink" href="./services/agentic-workflow-redesign/">Agentic Workflow Redesign</a></li>
+          <li><a class="mobile-nav__sublink" href="./services/forward-deployed-design-engineering/">Forward-Deployed Design Engineering</a></li>
+          <li><a class="mobile-nav__sublink" href="./services/ai-workforce-transformation/">AI Workforce Transformation &amp; Apprenticeship</a></li>
+        </ul>
+      </li>
       <li><a class="mobile-nav__link" href="./work/">Work</a></li>
       <li><a class="mobile-nav__link" href="./writing/">Writing</a></li>
       <li><a class="mobile-nav__link" href="./about/">About</a></li>
@@ -158,10 +181,9 @@
 
     <h1 class="hero__heading">Production AI for businesses that are actually complicated.</h1>
     <p class="hero__sub">Most AI pilots die somewhere between the demo and the workflow. We build the part that survives  the retrieval, the evaluation, the interface, and the operational logic that lets real people use the thing every day.</p>
-    <p class="hero__byline">Skowak · An AI transformation boutique</p>
     <div class="hero__actions">
       <a class="btn btn--primary" href="./contact/" data-contact-modal>Start a conversation</a>
-      <a class="btn btn--secondary" href="./consulting/#process">See how we work</a>
+      <a class="btn btn--secondary" href="./services/#process">See how we work</a>
     </div>
   </div>
 </section>
@@ -214,9 +236,6 @@
 
 <section class="section section--white section--border-top" data-reveal>
   <div class="container">
-    
-<p class="eyebrow">The problem</p>
-
     <h2 class="section-heading">The model was never the hard part.</h2>
   </div>
   <div class="container grid">
@@ -236,9 +255,6 @@
 
 <section class="section section--gray" data-reveal>
   <div class="container">
-    
-<p class="eyebrow">Outcomes</p>
-
     <h2 class="section-heading">What the work is for.</h2>
     <div class="triad">
       
@@ -269,9 +285,6 @@
 
 <section class="section section--light-blue" data-reveal>
   <div class="container">
-    
-<p class="eyebrow">Selected work</p>
-
     <h2 class="section-heading">Twenty years of making complicated operations work.</h2>
     <p class="prose prose--lead section-intro">Long before "AI transformation" had a name, this was the underlying job: taking dense, regulated, operationally tangled domains and turning them into software people could actually use.</p>
     <div class="work-split-list">
@@ -363,9 +376,6 @@
 
 <section class="section section--dark-blue" data-reveal>
   <div class="container">
-    
-<p class="eyebrow">Engagements</p>
-
     <h2 class="section-heading">Three ways to work together.</h2>
     <p class="prose prose--lead section-intro">Enter where you need to start. Each tier delivers independently; together they form a natural progression.</p>
     <div class="card-row card-row--three">
@@ -373,23 +383,23 @@
         <p class="card__eyebrow">Tier 1 · Map</p>
         <h3 class="card__title">AI Opportunity Sprint</h3>
         <p class="card__body">2–3 weeks, fixed fee. We find where AI creates real value in your operation and hand you a costed build plan  including the projects you should not do. </p>
-        <p class="card__foot"><span class="arrow-link"><a href="./consulting/#sprint">Learn more</a><span class="arrow-link__arrow" aria-hidden="true"> →</span></span></p>
+        <p class="card__foot"><span class="arrow-link"><a href="./services/ai-opportunity-sprint/">Learn more</a><span class="arrow-link__arrow" aria-hidden="true"> →</span></span></p>
       </article>
       <article class="card card--featured">
         <p class="card__eyebrow">Tier 2 · Build</p>
         <h3 class="card__title">Agentic Workflow Redesign</h3>
         <p class="card__body">4–6 weeks, fixed scope. End-to-end redesign of a critical business process with AI agents, human-in-the-loop oversight, and evaluation criteria for every decision point. </p>
-        <p class="card__foot"><span class="arrow-link"><a href="./consulting/#workflow-redesign">Learn more</a><span class="arrow-link__arrow" aria-hidden="true"> →</span></span></p>
+        <p class="card__foot"><span class="arrow-link"><a href="./services/agentic-workflow-redesign/">Learn more</a><span class="arrow-link__arrow" aria-hidden="true"> →</span></span></p>
       </article>
       <article class="card">
         <p class="card__eyebrow">Tier 3 · Build + Prove</p>
-        <h3 class="card__title">Embedded Build &amp; Prove Retainer</h3>
+        <h3 class="card__title">Forward-Deployed Design Engineering</h3>
         <p class="card__body">Monthly, minimum 3 months. We embed in your team to build, instrument, and prove the system works  then transfer ownership. </p>
-        <p class="card__foot"><span class="arrow-link"><a href="./consulting/#retainer">Learn more</a><span class="arrow-link__arrow" aria-hidden="true"> →</span></span></p>
+        <p class="card__foot"><span class="arrow-link"><a href="./services/forward-deployed-design-engineering/">Learn more</a><span class="arrow-link__arrow" aria-hidden="true"> →</span></span></p>
       </article>
     </div>
     <p class="section-foot">
-<a class="arrow-link" href="./consulting/">See what&#39;s included<span class="arrow-link__arrow" aria-hidden="true"> →</span></a>
+<a class="arrow-link" href="./services/">See what&#39;s included<span class="arrow-link__arrow" aria-hidden="true"> →</span></a>
 </p>
   </div>
 </section>
@@ -400,9 +410,6 @@
 
 <section class="section section--gray" data-reveal>
   <div class="container">
-    
-<p class="eyebrow">By the numbers</p>
-
     <div class="stats">
       
 <div class="stat">
@@ -435,9 +442,6 @@
 
 <section class="section section--white" data-reveal>
   <div class="container">
-    
-<p class="eyebrow">Why Skowak</p>
-
     <h2 class="section-heading">You get the person who does the work.</h2>
   </div>
   <div class="container grid">
@@ -470,9 +474,6 @@
 
 <section class="section section--light-blue" data-reveal>
   <div class="container">
-    
-<p class="eyebrow">How we work</p>
-
     <h2 class="section-heading">Map. Build. Prove.</h2>
     <div class="steps">
       <div class="steps__item">
@@ -492,7 +493,7 @@
       <p>Evaluations aren't a pass/fail gate. They're an instrument panel.</p>
     </blockquote>
     <p class="prose prose--dark">We call this <strong>Evaluation-Driven Design</strong>  building evaluations forces the conversation nobody has had yet, producing both a system you can measure and a specification you didn't have. 
-<a class="arrow-link" href="./consulting/#process">See the method<span class="arrow-link__arrow" aria-hidden="true"> →</span></a>
+<a class="arrow-link" href="./services/#process">See the method<span class="arrow-link__arrow" aria-hidden="true"> →</span></a>
 </p>
   </div>
 </section>
@@ -503,14 +504,11 @@
   <canvas id="closing-shader" class="closing__canvas" aria-hidden="true"></canvas>
   <div class="closing__inner">
     <div class="closing__panel">
-      
-<p class="eyebrow">Start here</p>
-
       <h2 class="closing__heading">What are you trying to build?</h2>
       <p class="closing__body">If you&#39;ve got an AI project that&#39;s stalled, or one you haven&#39;t started because you&#39;re not sure it&#39;s real, that&#39;s the conversation Skowak is most useful in. No deck, no discovery call theatre  just tell us what you&#39;re trying to do and we&#39;ll tell you honestly whether we can help.</p>
       <p class="closing__actions">
         <a class="btn btn--primary" href="./contact/" data-contact-modal>Start a conversation</a>
-        <a class="btn btn--secondary" href="./consulting/#process">See how we work</a>
+        <a class="btn btn--secondary" href="./services/#process">See how we work</a>
       </p>
     </div>
   </div>
@@ -527,7 +525,7 @@
     </div>
     <nav class="site-footer__nav" aria-label="Footer">
       <ul class="site-footer__list">
-        <li><a href="./consulting/">Consulting</a></li>
+        <li><a href="./services/">Services</a></li>
         <li><a href="./work/">Work</a></li>
         <li><a href="./writing/">Writing</a></li>
         <li><a href="./about/">About</a></li>
@@ -561,7 +559,6 @@
       <span aria-hidden="true">&times;</span>
     </button>
     <div class="contact-modal__intro">
-      <p class="eyebrow">Start a conversation</p>
       <h2 id="contact-modal-title">What are you trying to build?</h2>
       <p>Share the operational context and the first constraint that makes the project hard. Every message is read personally.</p>
     </div>

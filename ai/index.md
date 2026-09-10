@@ -1,12 +1,12 @@
 ---
 type: index
-title: Skowak — AI-readable corpus index
+title: Skowak, AI-readable corpus index
 description: Index of the plain-markdown documents describing Skowak, its engagements, method, and case studies.
 resource: https://skowak.com/ai/index.md
 tags: [index, skowak]
 ---
 
-# Skowak — AI-readable corpus
+# Skowak, AI-readable corpus
 
 Skowak is an AI transformation boutique that builds production AI systems for
 operationally complex, regulated businesses.
