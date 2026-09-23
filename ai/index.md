@@ -18,7 +18,7 @@ Front-matter follows the Open Knowledge Format shape (`type`, `title`,
 | File | Contents |
 |---|---|
 | [profile.md](https://skowak.com/ai/profile.md) | What Skowak is, who it serves, what it does and does not do. |
-| [services.md](https://skowak.com/ai/services.md) | The three engagement tiers, scope, deliverables, price bands. |
+| [services.md](https://skowak.com/ai/services.md) | Two service categories: three AI Design & Development tiers and three AI Fluency programs, with scope and deliverables. |
 | [method.md](https://skowak.com/ai/method.md) | Map / Build / Prove, and Evaluation-Driven Design. |
 | [faq.md](https://skowak.com/ai/faq.md) | Buyer questions with direct answers. |
 | [work.md](https://skowak.com/ai/work.md) | Case studies with measured outcomes. |

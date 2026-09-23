@@ -149,8 +149,8 @@
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
     --t-fast: 150ms;  --t-base: 180ms;  --t-slow: 500ms;
 
-    /* radius — HashiCorp scale (xs 4 / sm 6 / md 8 / lg 12 / xl 16 / xxl 24).
-       md 8 on buttons and inputs, lg 12 on cards, xxl 24 on CTA banners. */
+    /* derived radius aliases — intentionally tighter than the source DESIGN.md
+       scale for this implementation's buttons, cards, banners, and nav glass. */
     --radius: 5px;  --radius-card: 8px;  --radius-banner: 16px;  --radius-pill: 8px;
 
     /* derived: primary CTAs use the brand accent rather than neutral fills. */
@@ -315,7 +315,8 @@
   }
 
   /* Anchor targets must clear the fixed header (64px) or the heading lands
-     underneath it. Applies to /services#discovery-sprint, #retainer, #process. */
+     underneath it. Current service anchors include #design-development,
+     #sprint, #workflow-redesign, #retainer, #ai-fluency, and #process. */
   :target,
   [id] {
     scroll-margin-block-start: calc(64px + var(--s-6));
@@ -525,8 +526,18 @@
     pointer-events: auto;
     border-radius: var(--radius-pill);
     color: #F0F0F5;
+    transition: block-size var(--t-base) ease-out;
+  }
+
+  .site-header__inner::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    border-radius: inherit;
     background: rgba(10, 20, 60, 0.15);
-    -webkit-backdrop-filter: blur(1px) saturate(160%);
+    -webkit-backdrop-filter: blur(4px) saturate(160%);
     backdrop-filter: blur(4px) saturate(160%);
     border-top: 1px solid rgba(0, 0, 0, 0.25);
     border-left: 1px solid rgba(0, 0, 0, 0.25);
@@ -535,20 +546,22 @@
     box-shadow:
       0 1px 0 rgba(255, 255, 255, 0.05) inset,
       0 20px 40px -20px rgba(0, 0, 0, 0.5);
-    transition: block-size var(--t-base) ease-out,
-                background-color var(--t-base) ease-out,
+    transition: background-color var(--t-base) ease-out,
                 border-color var(--t-base) ease-out;
   }
 
   /* No-support fallback: solid dark chip instead of translucent glass. */
   @supports not (backdrop-filter: blur(1px)) {
-    .site-header__inner {
+    .site-header__inner::before {
       background: rgba(10, 20, 60, 0.85);
     }
   }
 
   .site-header--scrolled .site-header__inner {
     block-size: 66px;
+  }
+
+  .site-header--scrolled .site-header__inner::before {
     background: rgba(10, 20, 60, 0.15);
     border-top-color: rgba(0, 0, 0, 0.25);
     border-left-color: rgba(0, 0, 0, 0.25);
@@ -558,6 +571,10 @@
 
   /* Light mode: nav sits over a light section — white pill, dark text. */
   .site-header--light .site-header__inner {
+    color: #15181E;
+  }
+
+  .site-header--light .site-header__inner::before {
     background: rgba(255, 255, 255, 0.45);
     -webkit-backdrop-filter: blur(4px) saturate(160%);
     backdrop-filter: blur(4px) saturate(160%);
@@ -565,7 +582,6 @@
     border-left-color: rgba(0, 0, 0, 0.08);
     border-right-color: rgba(0, 0, 0, 0.06);
     border-bottom-color: rgba(0, 0, 0, 0.06);
-    color: #15181E;
   }
 
   .site-header--light .site-header__logo {
@@ -698,7 +714,7 @@
     inset-inline-start: 0;
     padding-block-start: var(--s-3);
     inline-size: max-content;
-    min-inline-size: 220px;
+    min-inline-size: 340px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4px);
@@ -718,22 +734,41 @@
     pointer-events: auto;
   }
 
+  /* Same glass recipe as .site-header__inner: light asymmetric border
+     (dark top/left, pale bottom/right) plus an inset highlight and a
+     dropped shadow, with a slightly stronger fill for legibility. */
   .site-header__dropdown-list {
     display: flex;
     flex-direction: column;
     gap: var(--s-1);
     padding: var(--s-3);
     border-radius: var(--radius-card);
-    background: rgba(10, 20, 60, 0.55);
-    -webkit-backdrop-filter: blur(12px) saturate(160%);
-    backdrop-filter: blur(12px) saturate(160%);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+    background: rgba(10, 20, 60, 0.32);
+    -webkit-backdrop-filter: blur(4px) saturate(160%);
+    backdrop-filter: blur(4px) saturate(160%);
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow:
+      0 1px 0 rgba(255, 255, 255, 0.05) inset,
+      0 20px 40px -20px rgba(0, 0, 0, 0.5);
+  }
+
+  @supports not (backdrop-filter: blur(1px)) {
+    .site-header__dropdown-list {
+      background: rgba(10, 20, 60, 0.85);
+    }
   }
 
   .site-header--light .site-header__dropdown-list {
-    background: rgba(255, 255, 255, 0.75);
-    border-color: rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(4px) saturate(160%);
+    backdrop-filter: blur(4px) saturate(160%);
+    border-top-color: rgba(0, 0, 0, 0.08);
+    border-left-color: rgba(0, 0, 0, 0.08);
+    border-right-color: rgba(0, 0, 0, 0.06);
+    border-bottom-color: rgba(0, 0, 0, 0.06);
   }
 
   .site-header__dropdown-link {
@@ -741,11 +776,14 @@
     font-size: var(--type-small);
     font-weight: 500;
     letter-spacing: -0.01em;
-    color: var(--c-text-muted);
+    /* Full-strength text, not the muted tone used elsewhere in the site —
+       the glass background needs the contrast. Only the category labels
+       below stay muted, since those aren't links. */
+    color: #F0F0F5;
     text-decoration: none;
-    /* Was nowrap; "Forward-Deployed Design Engineering" is long enough to
-       need a wrap so the flyout doesn't overflow the viewport. */
-    max-inline-size: 26ch;
+    /* Wide enough that even "AI Apprenticeship & Workforce Development"
+       stays on one line; the panel (min-inline-size above) grows to match. */
+    white-space: nowrap;
     padding: var(--s-2) var(--s-3);
     border-radius: var(--radius);
     transition: color var(--t-fast) ease-out, background-color var(--t-fast) ease-out;
@@ -753,18 +791,57 @@
 
   .site-header__dropdown-link:hover,
   .site-header__dropdown-link:focus-visible {
-    color: var(--c-text);
+    color: var(--c-accent-hi);
     background: rgba(255, 255, 255, 0.08);
   }
 
   .site-header--light .site-header__dropdown-link {
-    color: #3B3D45;
+    color: #15181E;
   }
 
   .site-header--light .site-header__dropdown-link:hover,
   .site-header--light .site-header__dropdown-link:focus-visible {
-    color: #15181E;
+    color: var(--c-accent);
     background: rgba(0, 0, 0, 0.05);
+  }
+
+  /* "All services" sits above the category groups with a hairline
+     separator, so it reads as an escape hatch rather than a third group. */
+  .site-header__dropdown-link--all {
+    border-block-end: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0;
+    padding-block-end: var(--s-3);
+    margin-block-end: var(--s-1);
+  }
+
+  .site-header--light .site-header__dropdown-link--all {
+    border-block-end-color: rgba(0, 0, 0, 0.08);
+  }
+
+  /* Category groups: "AI Design & Development" / "AI Fluency", each a
+     non-interactive label above its own sub-list of service links. */
+  .site-header__dropdown-group + .site-header__dropdown-group {
+    margin-block-start: var(--s-2);
+  }
+
+  .site-header__dropdown-label {
+    font-family: var(--f-sans);
+    font-size: var(--type-eyebrow);
+    font-weight: 600;
+    letter-spacing: var(--track-eyebrow);
+    text-transform: uppercase;
+    color: var(--c-text-faint);
+    padding: var(--s-2) var(--s-3) var(--s-1);
+  }
+
+  .site-header--light .site-header__dropdown-label {
+    color: var(--c-on-light-faint, #6E7690);
+  }
+
+  .site-header__dropdown-sublist {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-1);
   }
 
   .site-header__cta {
@@ -873,6 +950,20 @@
     color: var(--c-accent);
   }
 
+  .mobile-nav__sublabel {
+    font-family: var(--f-sans);
+    font-size: var(--type-eyebrow);
+    font-weight: 600;
+    letter-spacing: var(--track-eyebrow);
+    text-transform: uppercase;
+    color: var(--c-text-faint);
+    margin-block-start: var(--s-2);
+  }
+
+  .mobile-nav__sublabel:first-child {
+    margin-block-start: 0;
+  }
+
   /* --------------------------------------------------------------------
      Site footer — repeats nav, adds email, LinkedIn, location
      -------------------------------------------------------------------- */
@@ -952,9 +1043,8 @@
   /* --------------------------------------------------------------------
      Buttons
      -------------------------------------------------------------------- */
-  /* DESIGN.md button spec: 14px/600, 10×18 padding, radius md (8px),
-     ≥40px tap height. CTAs use brand blue; secondary buttons use a
-     blue/purple tint instead of neutral white or gray fills. */
+  /* Buttons retain the DESIGN.md type, spacing, and tap-height proportions.
+     Primary CTAs use a gold gradient; secondary buttons use a blue/purple tint. */
   .btn {
     display: inline-flex;
     align-items: center;
