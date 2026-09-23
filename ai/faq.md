@@ -1,9 +1,9 @@
 ---
 type: faq
 title: Skowak, frequently asked questions
-description: Direct answers to the questions buyers ask about Skowak's engagements, pricing, method, model choice, and work in regulated environments.
+description: Direct answers to the questions buyers ask about Skowak's engagements, method, model choice, and work in regulated environments.
 resource: https://skowak.com/services/
-tags: [faq, pricing, engagements, regulated]
+tags: [faq, engagements, regulated]
 ---
 
 # Skowak FAQ
@@ -38,6 +38,6 @@ Yes. Skowak has built for insurance underwriting, federal healthcare data, and e
 
 ## Where can I read more?
 
-Engagements and pricing: https://skowak.com/services/ · Case studies:
+Engagements and scope: https://skowak.com/services/ · Case studies:
 https://skowak.com/work/ · About Skowak: https://skowak.com/about/ · Contact:
 https://skowak.com/contact/

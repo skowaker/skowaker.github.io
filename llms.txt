@@ -4,16 +4,25 @@
 
 Skowak builds production AI systems for operationally complex, regulated businesses. Twenty years turning dense domains into software people actually use.
 
-Skowak works through three engagement tiers built on Evaluation-Driven Design:
-nothing counts until it is running in the client's business and their team can
-maintain it. Domains: insurance underwriting, federal healthcare data, solar and
-energy operations, developer infrastructure, education.
+Skowak works through two categories of service: AI Design & Development, three
+engagement tiers built on Evaluation-Driven Design where nothing counts until it
+is running in the client's business and their team can maintain it; and AI
+Fluency, programs for executives, engineering teams, and apprenticeship and
+workforce-development partners. Domains: insurance
+underwriting, federal healthcare data, solar and energy operations, developer
+infrastructure, education.
 
-## Engagements
+## AI Design & Development
 
 - [AI Opportunity Sprint](https://skowak.com/services/ai-opportunity-sprint/) A 2-3 week fixed-fee engagement that maps where AI can create value in your operation and pressure-tests each candidate against your data, constraints and people before any code is written.
 - [Agentic Workflow Redesign](https://skowak.com/services/agentic-workflow-redesign/) A 4-6 week fixed-scope engagement that redesigns the workflow around an AI system: agent placement, human-in-the-loop checkpoints, escalation paths, and an evaluation framework for every AI-assisted decision point.
 - [Forward-Deployed Design Engineering](https://skowak.com/services/forward-deployed-design-engineering/) A monthly embedded engagement, minimum three months, in which Skowak designs, builds, instruments and proves a production AI system inside your team, then transfers ownership.
+
+## AI Fluency
+
+- [Executive AI Fluency](https://skowak.com/services/executive-ai-fluency/) A half-day decision-competency program for leadership teams and boards: evaluate AI vendor claims, price the risk in a deployment, and answer the AI-strategy question before it's asked. Not a coding class.
+- [Builder AI Fluency](https://skowak.com/services/builder-ai-fluency/) A multi-week embedded series that teaches engineering teams the Evaluation-Driven Design practices behind every Skowak engagement, so ownership transfer after a project ends is a working skill, not a handoff document.
+- [AI Apprenticeship & Workforce Development](https://skowak.com/services/ai-apprenticeship/) Skowak designs the AI instructional and competency components of structured apprenticeship and workforce-development programs, for enterprise and government organizations, employers, and apprenticeship sponsors: RTI, competency frameworks, curriculum, mentor training, and assessment.
 
 ## Pages
 
@@ -27,10 +36,13 @@ energy operations, developer infrastructure, education.
 - [Fidelity Life case study](https://skowak.com/work/fidelity-life/): Taking insurance applications from four days to thirty minutes  underwriting, case management, and product configuration for a multi-year transformation.
 - [Work](https://skowak.com/work/): Selected work: twenty years of turning operationally dense domains into systems people use  complex rules, regulated constraints, measured outcomes.
 - [AI Opportunity Sprint](https://skowak.com/services/ai-opportunity-sprint/): A 2–3 week fixed-fee engagement that maps where AI can create value in your operation and pressure-tests each candidate against your data, constraints and people before any code is written.
-- [Home](https://skowak.com/): Skowak builds production AI systems for operationally complex, regulated businesses. Twenty years turning dense domains into software people actually use.
 - [Agentic Workflow Redesign](https://skowak.com/services/agentic-workflow-redesign/): A 4–6 week fixed-scope engagement that redesigns the workflow around an AI system: agent placement, human-in-the-loop checkpoints, escalation paths, and an evaluation framework for every AI-assisted decision point.
 - [Forward-Deployed Design Engineering](https://skowak.com/services/forward-deployed-design-engineering/): An embedded engagement, minimum three months, in which Skowak designs, builds, instruments and proves a production AI system inside your team, then transfers ownership.
-- [AI Services](https://skowak.com/services/): Three engagement tiers  from a fixed-fee Sprint to an embedded retainer  all built on Evaluation-Driven Design: nothing counts until it's running in your business.
+- [Executive AI Fluency](https://skowak.com/services/executive-ai-fluency/): A half-day decision-competency program for leadership teams and boards: evaluate AI vendor claims, price the risk in a deployment, and answer the AI-strategy question before it's asked. Not a coding class.
+- [Builder AI Fluency](https://skowak.com/services/builder-ai-fluency/): A multi-week embedded series that teaches engineering teams the Evaluation-Driven Design practices behind every Skowak engagement, so ownership transfer after a project ends is a working skill, not a handoff document.
+- [AI Apprenticeship & Workforce Development](https://skowak.com/services/ai-apprenticeship/): Skowak designs the AI instructional and competency components of structured apprenticeship and workforce-development programs, for enterprise and government organizations, employers, and apprenticeship sponsors: RTI, competency frameworks, curriculum, mentor training, and assessment.
+- [AI Services](https://skowak.com/services/): AI Design & Development, from a fixed-fee Sprint to embedded design engineering, all built on Evaluation-Driven Design, plus AI Fluency programs for executives, builders, and workforce partners.
+- [Home](https://skowak.com/): Skowak builds production AI systems for operationally complex, regulated businesses. Twenty years turning dense domains into software people actually use.
 
 ## AI-readable corpus
 
@@ -38,7 +50,7 @@ Plain-markdown source documents, one topic per file:
 
 - [Index](https://skowak.com/ai/index.md)
 - [Profile](https://skowak.com/ai/profile.md): what Skowak is, who it serves, how it works.
-- [Services](https://skowak.com/ai/services.md): the three engagement tiers with scope and deliverables.
+- [Services](https://skowak.com/ai/services.md): two service categories and six offerings with scope and deliverables.
 - [Method](https://skowak.com/ai/method.md): Map / Build / Prove and Evaluation-Driven Design.
 - [FAQ](https://skowak.com/ai/faq.md): common buyer questions with direct answers.
 - [Work](https://skowak.com/ai/work.md): case studies with measured outcomes.
