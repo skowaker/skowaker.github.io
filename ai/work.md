@@ -8,7 +8,7 @@ tags: [case-studies, insurance, healthcare, solar, multi-agent, outcomes]
 
 # Skowak case studies
 
-Twenty years of turning operationally dense domains into systems people use:
+15+ years of turning operationally dense domains into systems people use:
 complex rules, regulated constraints, measured outcomes.
 
 ## Fidelity Life, insurance underwriting

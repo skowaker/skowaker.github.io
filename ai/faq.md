@@ -3,10 +3,22 @@ type: faq
 title: Skowak, frequently asked questions
 description: Direct answers to the questions buyers ask about Skowak's engagements, method, model choice, and work in regulated environments.
 resource: https://skowak.com/services/
-tags: [faq, engagements, regulated]
+tags: [faq, engagements, regulated, washington-dc, northern-virginia]
 ---
 
 # Skowak FAQ
+
+## What kind of company is Skowak?
+
+Skowak is an AI product design and development studio in Ashburn, Virginia, serving the Washington, DC metro area and clients nationwide. It designs and builds production AI systems, covering discovery, UX and interaction design, and the engineering behind them, for operationally complex, regulated businesses.
+
+## Where is Skowak located, and does it work with clients outside the DC area?
+
+Skowak is based in Ashburn, Virginia, and works across Northern Virginia, Washington, DC and Maryland, with on-site sessions in the region when they help. Engagements are remote-first, so Skowak also works with clients across the United States.
+
+## Does Skowak work with federal agencies and government contractors?
+
+Skowak works in regulated and government-adjacent environments and is familiar with the constraints they bring: audit trails, data residency, human review of automated decisions, and open models running inside your own environment when compliance requires it. Skowak can work as a design and AI engineering subcontractor to a prime contractor.
 
 ## What's the difference between the Sprint, the Workflow Redesign, and Forward-Deployed Design Engineering?
 
@@ -14,7 +26,7 @@ The Sprint tells you what to build. The Workflow Redesign designs how it works, 
 
 ## How is this different from hiring a firm?
 
-A firm gives you capacity and a brand; Skowak gives you a senior practitioner who does every part of the job personally. If you need six engineers, hire a firm. If you need one person with twenty years of judgment who will write the code, that's this.
+A firm gives you capacity and a brand; Skowak gives you a senior practitioner who does every part of the job personally. If you need six engineers, hire a firm. If you need one person with 15+ years of judgment who will write the code, that's this.
 
 ## What is Evaluation-Driven Design?
 
@@ -39,5 +51,5 @@ Yes. Skowak has built for insurance underwriting, federal healthcare data, and e
 ## Where can I read more?
 
 Engagements and scope: https://skowak.com/services/ · Case studies:
-https://skowak.com/work/ · About Skowak: https://skowak.com/about/ · Contact:
+https://skowak.com/work/ · About Skowak: https://skowak.com/about/ · Washington, DC and Northern Virginia: https://skowak.com/washington-dc-virginia/ · Contact:
 https://skowak.com/contact/

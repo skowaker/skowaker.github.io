@@ -1,8 +1,10 @@
 # Skowak
 
-> Skowak is an AI transformation boutique that builds production AI systems for operationally complex, regulated businesses.
+> Skowak is an AI product design and development studio in Ashburn, Virginia, serving the Washington, DC metro area, that builds production AI systems for operationally complex, regulated businesses.
 
-Skowak builds production AI systems for operationally complex, regulated businesses. Twenty years turning dense domains into software people actually use.
+Skowak is an AI product design and development studio in Northern Virginia, serving Washington, DC and clients nationwide. 15+ years turning dense, regulated domains into software people actually use.
+
+Location: Ashburn, Virginia (Loudoun County), Washington, DC metro area. Serves Northern Virginia, Washington, DC and Maryland on-site, and clients across the United States remotely. Category: AI product design and development studio (product strategy, UX and interaction design, and production AI engineering, delivered by the same senior practitioner).
 
 Skowak works through two categories of service: AI Design & Development, three
 engagement tiers built on Evaluation-Driven Design where nothing counts until it
@@ -26,30 +28,31 @@ infrastructure, education.
 
 ## Pages
 
-- [Building reliable systems out of an unreliable ingredient](https://skowak.com/writing/reliable-systems/): LLMs will produce confident wrong answers. The question isn't whether AI makes mistakes  it's whether you can build reliable systems using this unpredictable ingredient.
 - [Start a conversation](https://skowak.com/contact/): Tell Skowak what you're working on. Every message is read personally  expect a reply within two business days.
-- [About](https://skowak.com/about/): Skowak is an AI transformation boutique  twenty years designing and building software for domains that resist it: insurance underwriting, federal healthcare data, solar engineering, developer infrastructure.
-- [Writing](https://skowak.com/writing/): Articles on building production AI systems  the reliability problem, the evaluation problem, and the gap between demos and workflows.
+- [Fidelity Life case study](https://skowak.com/work/fidelity-life/): Taking insurance applications from four days to thirty minutes  underwriting, case management, and product configuration for a multi-year transformation.
+- [Craftal case study](https://skowak.com/work/craftal/): Building a research-based multi-agent product-planning system  custom DSL, RAG pipeline, deterministic verification, and structured planning workflows with human review.
 - [SunPower case study](https://skowak.com/work/sunpower/): Compressing commercial solar design from days to 25 minutes  UX architecture and product design for SunPower's digital platform.
 - [Bitscopic, federal healthcare data case study](https://skowak.com/work/federal-health/): Cutting clinical data review effort by up to 80% for Bitscopic, health-data analysis, reporting, and decision-support interfaces inside a government health system.
-- [Craftal case study](https://skowak.com/work/craftal/): Building a research-based multi-agent product-planning system  custom DSL, RAG pipeline, deterministic verification, and structured planning workflows with human review.
-- [Fidelity Life case study](https://skowak.com/work/fidelity-life/): Taking insurance applications from four days to thirty minutes  underwriting, case management, and product configuration for a multi-year transformation.
-- [Work](https://skowak.com/work/): Selected work: twenty years of turning operationally dense domains into systems people use  complex rules, regulated constraints, measured outcomes.
+- [Builder AI Fluency](https://skowak.com/services/builder-ai-fluency/): A multi-week embedded series that teaches engineering teams the Evaluation-Driven Design practices behind every Skowak engagement, so ownership transfer after a project ends is a working skill, not a handoff document.
+- [AI Apprenticeship & Workforce Development](https://skowak.com/services/ai-apprenticeship/): Skowak designs the AI instructional and competency components of structured apprenticeship and workforce-development programs, for enterprise and government organizations, employers, and apprenticeship sponsors: RTI, competency frameworks, curriculum, mentor training, and assessment.
+- [Building reliable systems out of an unreliable ingredient](https://skowak.com/writing/reliable-systems/): LLMs will produce confident wrong answers. The question isn't whether AI makes mistakes  it's whether you can build reliable systems using this unpredictable ingredient.
 - [AI Opportunity Sprint](https://skowak.com/services/ai-opportunity-sprint/): A 2–3 week fixed-fee engagement that maps where AI can create value in your operation and pressure-tests each candidate against your data, constraints and people before any code is written.
 - [Agentic Workflow Redesign](https://skowak.com/services/agentic-workflow-redesign/): A 4–6 week fixed-scope engagement that redesigns the workflow around an AI system: agent placement, human-in-the-loop checkpoints, escalation paths, and an evaluation framework for every AI-assisted decision point.
 - [Forward-Deployed Design Engineering](https://skowak.com/services/forward-deployed-design-engineering/): An embedded engagement, minimum three months, in which Skowak designs, builds, instruments and proves a production AI system inside your team, then transfers ownership.
-- [Executive AI Fluency](https://skowak.com/services/executive-ai-fluency/): A half-day decision-competency program for leadership teams and boards: evaluate AI vendor claims, price the risk in a deployment, and answer the AI-strategy question before it's asked. Not a coding class.
-- [Builder AI Fluency](https://skowak.com/services/builder-ai-fluency/): A multi-week embedded series that teaches engineering teams the Evaluation-Driven Design practices behind every Skowak engagement, so ownership transfer after a project ends is a working skill, not a handoff document.
-- [AI Apprenticeship & Workforce Development](https://skowak.com/services/ai-apprenticeship/): Skowak designs the AI instructional and competency components of structured apprenticeship and workforce-development programs, for enterprise and government organizations, employers, and apprenticeship sponsors: RTI, competency frameworks, curriculum, mentor training, and assessment.
 - [AI Services](https://skowak.com/services/): AI Design & Development, from a fixed-fee Sprint to embedded design engineering, all built on Evaluation-Driven Design, plus AI Fluency programs for executives, builders, and workforce partners.
-- [Home](https://skowak.com/): Skowak builds production AI systems for operationally complex, regulated businesses. Twenty years turning dense domains into software people actually use.
+- [Executive AI Fluency](https://skowak.com/services/executive-ai-fluency/): A half-day decision-competency program for leadership teams and boards: evaluate AI vendor claims, price the risk in a deployment, and answer the AI-strategy question before it's asked. Not a coding class.
+- [AI Product Design & Development Studio in Northern Virginia & Washington, DC](https://skowak.com/washington-dc-virginia/): Skowak is an AI product design and development studio in Ashburn, Virginia, serving Washington, DC, Northern Virginia and Maryland. Senior-led product design, UX and production AI engineering for regulated businesses.
+- [About](https://skowak.com/about/): Skowak is an AI product design and development studio in Ashburn, Virginia, built on 15+ years designing and building software for domains that resist it: insurance underwriting, federal healthcare data, solar engineering, developer infrastructure.
+- [Home](https://skowak.com/): Skowak is an AI product design and development studio in Ashburn, Virginia, serving Washington, DC and clients nationwide. Production AI systems for operationally complex, regulated businesses.
+- [Work](https://skowak.com/work/): Selected work: 15+ years of turning operationally dense domains into systems people use  complex rules, regulated constraints, measured outcomes.
+- [Writing](https://skowak.com/writing/): Articles on building production AI systems  the reliability problem, the evaluation problem, and the gap between demos and workflows.
 
 ## AI-readable corpus
 
 Plain-markdown source documents, one topic per file:
 
 - [Index](https://skowak.com/ai/index.md)
-- [Profile](https://skowak.com/ai/profile.md): what Skowak is, who it serves, how it works.
+- [Profile](https://skowak.com/ai/profile.md): what Skowak is, where it is based, who it serves, how it works.
 - [Services](https://skowak.com/ai/services.md): two service categories and six offerings with scope and deliverables.
 - [Method](https://skowak.com/ai/method.md): Map / Build / Prove and Evaluation-Driven Design.
 - [FAQ](https://skowak.com/ai/faq.md): common buyer questions with direct answers.
@@ -57,6 +60,7 @@ Plain-markdown source documents, one topic per file:
 
 ## Contact
 
+- [Washington, DC and Northern Virginia](https://skowak.com/washington-dc-virginia/)
 - [Start a conversation](https://skowak.com/contact/)
 - [LinkedIn](https://www.linkedin.com/company/skowak)
 

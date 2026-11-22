@@ -3,10 +3,14 @@ type: services
 title: Skowak, engagements
 description: Skowak's two service categories, AI Design & Development (three engagement tiers, AI Opportunity Sprint, Agentic Workflow Redesign, and Forward-Deployed Design Engineering) and AI Fluency (Executive, Builder, and Apprenticeship & Workforce Development programs), with scope and deliverables.
 resource: https://skowak.com/services/
-tags: [services, ai-services, engagements, ai-fluency]
+tags: [services, product-design, ai-development, engagements, ai-fluency, washington-dc]
 ---
 
 # Skowak engagements
+
+Skowak is an AI product design and development studio in Ashburn, Virginia.
+Every engagement below is available on-site in the Washington, DC metro area
+(Northern Virginia, DC, Maryland) or remotely anywhere in the United States.
 
 Two categories. AI Design & Development is three tiers on one principle:
 nothing counts until it is running in the client's business and their team can

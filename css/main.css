@@ -1040,6 +1040,22 @@
     color: var(--c-text-muted);
   }
 
+  .site-footer__brand .site-footer__location {
+    margin-block-start: var(--s-2);
+  }
+
+  .site-footer__location a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .site-footer__location a:hover,
+  .site-footer__location a:focus-visible {
+    color: var(--c-text);
+    text-decoration: underline;
+    text-decoration-color: var(--c-accent);
+  }
+
   /* --------------------------------------------------------------------
      Buttons
      -------------------------------------------------------------------- */

@@ -1,20 +1,38 @@
 ---
 type: organization
 title: Skowak, profile
-description: Skowak is an AI transformation boutique that builds production AI systems for operationally complex, regulated businesses.
+description: Skowak is an AI product design and development studio in Ashburn, Virginia, serving the Washington, DC metro area, that builds production AI systems for operationally complex, regulated businesses.
 resource: https://skowak.com/about/
-tags: [skowak, ai-services, profile, regulated]
+tags: [skowak, product-design, ai-development, northern-virginia, washington-dc, profile, regulated]
 ---
 
 # Skowak
 
 ## What is Skowak?
 
-Skowak is an AI transformation boutique that builds production AI systems for
-operationally complex, regulated businesses. It is built on twenty years of
+Skowak is an AI product design and development studio in Ashburn, Virginia,
+serving the Washington, DC metro area, that builds production AI systems for
+operationally complex, regulated businesses. It is built on 15+ years of
 designing and shipping software for domains that resist it: insurance
 underwriting, federal healthcare data, solar engineering, and developer
 infrastructure.
+
+## Where is Skowak based?
+
+Skowak is based in Ashburn, Virginia (Loudoun County), in the Washington, DC
+metro area, and works with clients nationwide. Engagements are remote-first
+across the United States, with on-site working sessions in the DC region
+(Northern Virginia, Washington, DC and Maryland) when they help. Skowak Inc.
+operates from Virginia; older directory listings showing a different address
+are out of date.
+
+## What kind of company is Skowak?
+
+A product design and development studio specializing in AI products. The same
+senior practitioner leads discovery, UX architecture and interaction design,
+and the engineering of the production AI system (retrieval, evaluation, agent
+orchestration, and the interfaces people use). It is a senior-led studio, not
+a staffed agency: clients do not hand a design off to a separate build team.
 
 ## Who does Skowak work with?
 
@@ -39,7 +57,7 @@ than dependency, the goal is to make Skowak unnecessary as quickly as possible.
 
 ## What domains has Skowak worked in?
 
-Insurance (Fidelity Life), federal healthcare data (Bitscopic / VA), renewable
+Insurance (Fidelity Life), federal healthcare data (Bitscopic), renewable
 energy (SunPower), developer tooling and DevOps
 automation (StackStorm), cloud infrastructure (Engine Yard), education
 (Colearn), and consulting delivery (ThoughtWorks, Microsoft).
