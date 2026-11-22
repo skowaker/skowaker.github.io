@@ -1,7 +1,7 @@
 ---
 type: organization
 title: Skowak, profile
-description: Skowak is an AI product design and development studio in Ashburn, Virginia, serving the Washington, DC metro area, that builds production AI systems for operationally complex, regulated businesses.
+description: Skowak is an AI product design and development studio in Ashburn, Virginia, serving the Washington, DC metro area and clients nationwide, that builds production AI systems for operationally complex, regulated businesses.
 resource: https://skowak.com/about/
 tags: [skowak, product-design, ai-development, northern-virginia, washington-dc, profile, regulated]
 ---
@@ -11,7 +11,7 @@ tags: [skowak, product-design, ai-development, northern-virginia, washington-dc,
 ## What is Skowak?
 
 Skowak is an AI product design and development studio in Ashburn, Virginia,
-serving the Washington, DC metro area, that builds production AI systems for
+serving the Washington, DC metro area and clients nationwide, that builds production AI systems for
 operationally complex, regulated businesses. It is built on 15+ years of
 designing and shipping software for domains that resist it: insurance
 underwriting, federal healthcare data, solar engineering, and developer

@@ -9,7 +9,7 @@ tags: [index, skowak]
 # Skowak, AI-readable corpus
 
 Skowak is an AI product design and development studio in Ashburn, Virginia,
-serving the Washington, DC metro area, that builds production AI systems for
+serving the Washington, DC metro area and clients nationwide, that builds production AI systems for
 operationally complex, regulated businesses.
 
 These files are the canonical, machine-readable source for what Skowak does.
