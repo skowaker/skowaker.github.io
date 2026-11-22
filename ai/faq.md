@@ -24,9 +24,9 @@ Skowak works in regulated and government-adjacent environments and is familiar w
 
 The Sprint tells you what to build. The Workflow Redesign designs how it works, who reviews what, where AI agents make decisions, how you know it's performing. Forward-Deployed Design Engineering builds it, proves it works in production, and transfers ownership to your team. You can enter at any tier depending on where you are.
 
-## How is this different from hiring a firm?
+## How is this different from hiring a large firm?
 
-A firm gives you capacity and a brand; Skowak gives you a senior practitioner who does every part of the job personally. If you need six engineers, hire a firm. If you need one person with 15+ years of judgment who will write the code, that's this.
+A large firm gives you capacity and a brand, and staffs your project with whoever is available. Skowak delivers discovery, design and engineering as one practice, backed by 15+ years of judgment about what breaks in production. If you need dozens of engineers or 24/7 coverage, a large firm is the better fit. If you need design and engineering judgment applied directly to a hard problem, that's Skowak.
 
 ## What is Evaluation-Driven Design?
 

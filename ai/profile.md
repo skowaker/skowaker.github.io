@@ -28,29 +28,29 @@ are out of date.
 
 ## What kind of company is Skowak?
 
-A product design and development studio specializing in AI products. The same
-senior practitioner leads discovery, UX architecture and interaction design,
-and the engineering of the production AI system (retrieval, evaluation, agent
-orchestration, and the interfaces people use). It is a senior-led studio, not
-a staffed agency: clients do not hand a design off to a separate build team.
+A product design and development studio specializing in AI products. Skowak
+delivers discovery, UX architecture and interaction design, and the engineering
+of the production AI system (retrieval, evaluation, agent orchestration, and the
+interfaces people use) as one piece of work. It is a focused studio, not a
+staffed agency: clients do not hand a design off to a separate build team.
 
 ## Who does Skowak work with?
 
 Organizations with an AI project stalled between prototype and production, whose
 operation is genuinely complex, regulated, multi-stakeholder, or built on
-decades of accumulated process, and who need one person who can design the
-system and build it rather than one or the other. Skowak works with startups
+decades of accumulated process, and who need the system designed and built
+together rather than by separate vendors. Skowak works with startups
 from garage to Series A and with enterprises of thousands of employees.
 
 ## Who is Skowak not for?
 
 Teams that need a large delivery team or 24/7 coverage, teams that want a
 strategy deck with no implementation, and buyers shopping primarily on hourly
-rate. For a large multi-year program, hire a firm.
+rate. For a large multi-year program, a large firm is a better fit.
 
 ## What makes Skowak different?
 
-The person who runs discovery is the person who builds the system. No
+Discovery, design and engineering happen inside one practice. No
 translation loss, no staffing surprise, no junior team learning the client's
 domain on the client's budget. Engagements are structured around handoff rather
 than dependency, the goal is to make Skowak unnecessary as quickly as possible.

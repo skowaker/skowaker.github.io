@@ -4,7 +4,7 @@
 
 Skowak is an AI product design and development studio in Northern Virginia, serving Washington, DC and clients nationwide. 15+ years turning dense, regulated domains into software people actually use.
 
-Location: Ashburn, Virginia (Loudoun County), Washington, DC metro area. Serves Northern Virginia, Washington, DC and Maryland on-site, and clients across the United States remotely. Category: AI product design and development studio (product strategy, UX and interaction design, and production AI engineering, delivered by the same senior practitioner).
+Location: Ashburn, Virginia (Loudoun County), Washington, DC metro area. Serves Northern Virginia, Washington, DC and Maryland on-site, and clients across the United States remotely. Category: AI product design and development studio (product strategy, UX and interaction design, and production AI engineering, delivered together as one practice).
 
 Skowak works through two categories of service: AI Design & Development, three
 engagement tiers built on Evaluation-Driven Design where nothing counts until it
@@ -41,7 +41,7 @@ infrastructure, education.
 - [Forward-Deployed Design Engineering](https://skowak.com/services/forward-deployed-design-engineering/): An embedded engagement, minimum three months, in which Skowak designs, builds, instruments and proves a production AI system inside your team, then transfers ownership.
 - [AI Services](https://skowak.com/services/): AI Design & Development, from a fixed-fee Sprint to embedded design engineering, all built on Evaluation-Driven Design, plus AI Fluency programs for executives, builders, and workforce partners.
 - [Executive AI Fluency](https://skowak.com/services/executive-ai-fluency/): A half-day decision-competency program for leadership teams and boards: evaluate AI vendor claims, price the risk in a deployment, and answer the AI-strategy question before it's asked. Not a coding class.
-- [AI Product Design & Development Studio in Northern Virginia & Washington, DC](https://skowak.com/washington-dc-virginia/): Skowak is an AI product design and development studio in Ashburn, Virginia, serving Washington, DC, Northern Virginia and Maryland. Senior-led product design, UX and production AI engineering for regulated businesses.
+- [AI Product Design & Development Studio in Northern Virginia & Washington, DC](https://skowak.com/washington-dc-virginia/): Skowak is an AI product design and development studio in Ashburn, Virginia, serving Washington, DC, Northern Virginia and Maryland. Product design, UX and production AI engineering for regulated businesses.
 - [About](https://skowak.com/about/): Skowak is an AI product design and development studio in Ashburn, Virginia, built on 15+ years designing and building software for domains that resist it: insurance underwriting, federal healthcare data, solar engineering, developer infrastructure.
 - [Home](https://skowak.com/): Skowak is an AI product design and development studio in Ashburn, Virginia, serving Washington, DC and clients nationwide. Production AI systems for operationally complex, regulated businesses.
 - [Work](https://skowak.com/work/): Selected work: 15+ years of turning operationally dense domains into systems people use  complex rules, regulated constraints, measured outcomes.
